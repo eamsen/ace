@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<instance>
+<presentation name="4queens" maxConstraintArity="2" format="XCSP 2.0"/>
+	<domains nbDomains="1">
+		<domain name="D0" nbValues="4">1..4</domain>
+	</domains>
+	<variables nbVariables="4">
+		<variable name="c1" domain="D0"/>
+		<variable name="c2" domain="D0"/>
+		<variable name="c3" domain="D0"/>
+		<variable name="c4" domain="D0"/>
+	</variables>
+	<relations nbRelations="3">
+		<relation name="e1" arity="2" nbTuples="6" semantics="supports">1 3 | 1 4 | 2 4 | 3 1 | 4 1 | 4 2</relation>
+		<relation name="e2" arity="2" nbTuples="8" semantics="supports">1 2 | 1 4 | 2 1 | 2 3 | 3 2 | 3 4 | 4 1 | 4 3</relation>
+		<relation name="e3" arity="2" nbTuples="10" semantics="supports">1 2 | 1 3 | 2 1 | 2 3 | 2 4 | 3 1 | 3 2 | 3 4 | 4 2 | 4 3</relation>
+	</relations>
+	<constraints nbConstraints="6">
+		<constraint name="r12" arity="2" scope="c1 c2" reference="e1"/>
+		<constraint name="r23" arity="2" scope="c2 c3" reference="e1"/>
+		<constraint name="r34" arity="2" scope="c3 c4" reference="e1"/>
+		<constraint name="r13" arity="2" scope="c1 c3" reference="e2"/>
+		<constraint name="r24" arity="2" scope="c2 c4" reference="e2"/>
+		<constraint name="r14" arity="2" scope="c1 c4" reference="e3"/>
+	</constraints>
+</instance> 

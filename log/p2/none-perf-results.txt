@@ -1,0 +1,42 @@
+File: project_2_benchmarks/hanoi-3.xml
+SAT
+Iterations: 201
+Solve time: 1.15ms
+Total time: 1.15ms
+ 
+File: project_2_benchmarks/hanoi-5.xml
+INDETERMINATE
+Iterations: 1051195
+Solve time: 5.00min
+Total time: 5.00min
+ 
+File: project_2_benchmarks/hanoi-7.xml
+INDETERMINATE
+Iterations: 9579
+Solve time: 5.07min
+Total time: 5.07min
+ 
+File: project_2_benchmarks/knights-10-5.xml
+UNSAT
+Iterations: 21005
+Solve time: 2.77s
+Total time: 2.77s
+ 
+File: project_2_benchmarks/knights-8-5.xml
+UNSAT
+Iterations: 10393
+Solve time: 820.00ms
+Total time: 820.00ms
+ 
+File: project_2_benchmarks/sudoku-1.xml
+SAT
+Iterations: 1467056
+Solve time: 3.87min
+Total time: 3.87min
+ 
+File: project_2_benchmarks/sudoku-2.xml
+INDETERMINATE
+Iterations: 1264896
+Solve time: 5.00min
+Total time: 5.00min
+ 

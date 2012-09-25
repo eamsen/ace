@@ -1,0 +1,72 @@
+File: benchmarks/normal/hanoi-3.xml
+Variables: 6
+Constraints: 5
+SAT (1)
+Explored: 61 of 2.12576e+06 (0.00286956%)
+Backtracks: 1
+Solve time: 84µs
+Total time: 84µs
+ 
+File: benchmarks/normal/hanoi-5.xml
+Variables: 30
+Constraints: 29
+INDETERMINATE
+Explored: 1.22051e+08 of 2.50631e+67 (4.86975e-58%)
+Backtracks: 1478195
+Solve time: 5.00min
+Total time: 5.00min
+ 
+File: benchmarks/normal/hanoi-7.xml
+Variables: 126
+Constraints: 125
+INDETERMINATE
+Explored: 2.1769e+07 of inf (0%)
+Backtracks: 29645
+Solve time: 5.00min
+Total time: 5.00min
+ 
+File: benchmarks/normal/knights-10-5.xml
+Variables: 5
+Constraints: 10
+UNSAT
+Explored: 2.1005e+06 of 1e+10 (0.021005%)
+Backtracks: 21004
+Solve time: 2.39s
+Total time: 2.39s
+ 
+File: benchmarks/normal/knights-8-5.xml
+Variables: 5
+Constraints: 10
+UNSAT
+Explored: 665152 of 1.07374e+09 (0.0619471%)
+Backtracks: 10392
+Solve time: 674.49ms
+Total time: 674.49ms
+ 
+File: benchmarks/normal/sudoku-1.xml
+Variables: 81
+Constraints: 697
+SAT (1)
+Explored: 1.00079e+07 of 5.72642e+46 (1.74768e-38%)
+Backtracks: 1844734
+Solve time: 2.51min
+Total time: 2.51min
+ 
+File: benchmarks/normal/sudoku-2.xml
+Variables: 81
+Constraints: 786
+INDETERMINATE
+Explored: 1.69084e+07 of 1.06112e+62 (1.59345e-53%)
+Backtracks: 2995595
+Solve time: 5.00min
+Total time: 5.00min
+ 
+File: benchmarks/normal/sudoku-3.xml
+Variables: 81
+Constraints: 697
+INDETERMINATE
+Explored: 1.88865e+07 of 1.79701e+57 (1.051e-48%)
+Backtracks: 9442799
+Solve time: 5.00min
+Total time: 5.00min
+ 

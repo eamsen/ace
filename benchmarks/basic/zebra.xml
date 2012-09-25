@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<instance>
+<presentation name="zebra" maxConstraintArity="2" format="XCSP 2.0"/>
+	<domains nbDomains="3">
+		<domain name="house" nbValues="5">1..5</domain>
+		<domain name="middle" nbValues="1">3</domain>
+		<domain name="first" nbValues="1">1</domain>
+	</domains>
+	<variables nbVariables="25">
+		<variable name="english" domain="house"/>
+		<variable name="spanish" domain="house"/>
+		<variable name="ukrainian" domain="house"/>
+		<variable name="norwegian" domain="first"/>
+		<variable name="japanese" domain="house"/>
+		<variable name="red" domain="house"/>
+		<variable name="green" domain="house"/>
+		<variable name="ivory" domain="house"/>
+		<variable name="yellow" domain="house"/>
+		<variable name="blue" domain="house"/>
+		<variable name="dog" domain="house"/>
+		<variable name="snail" domain="house"/>
+		<variable name="fox" domain="house"/>
+		<variable name="horse" domain="house"/>
+		<variable name="zebra" domain="house"/>
+		<variable name="coffee" domain="house"/>
+		<variable name="tea" domain="house"/>
+		<variable name="milk" domain="middle"/>
+		<variable name="juice" domain="house"/>
+		<variable name="water" domain="house"/>
+		<variable name="oldgold" domain="house"/>
+		<variable name="kools" domain="house"/>
+		<variable name="chesterfield" domain="house"/>
+		<variable name="lucky" domain="house"/>
+		<variable name="parliament" domain="house"/>
+	</variables>
+	<relations nbRelations="4">
+    <relation name="eq" arity="2" nbTuples="5" semantics="supports">
+      1 1 | 2 2 | 3 3 | 4 4 | 5 5
+    </relation>
+    <relation name="neq" arity="2" nbTuples="5" semantics="conflicts">
+      1 1 | 2 2 | 3 3 | 4 4 | 5 5
+    </relation>
+    <relation name="rightof" arity="2" nbTuples="4" semantics="supports">
+      2 1 | 3 2 | 4 3 | 5 4
+    </relation>
+    <relation name="nextto" arity="2" nbTuples="8" semantics="supports">
+      1 2 | 2 3 | 3 4 | 4 5 | 2 1 | 3 2 | 4 3 | 5 4
+    </relation>
+	</relations>
+	<constraints nbConstraints="62">
+		<constraint name="c1" arity="2" scope="english red" reference="eq"/>
+		<constraint name="c2" arity="2" scope="spanish dog" reference="eq"/>
+		<constraint name="c3" arity="2" scope="coffee green" reference="eq"/>
+		<constraint name="c4" arity="2" scope="ukrainian tea" reference="eq"/>
+		<constraint name="c5" arity="2" scope="green ivory" reference="rightof"/>
+		<constraint name="c6" arity="2" scope="oldgold snail" reference="eq"/>
+		<constraint name="c7" arity="2" scope="kools yellow" reference="eq"/>
+		<constraint name="c8" arity="2" scope="chesterfield fox" reference="nextto"/>
+		<constraint name="c9" arity="2" scope="yellow horse" reference="nextto"/>
+		<constraint name="c10" arity="2" scope="lucky juice" reference="eq"/>
+		<constraint name="c11" arity="2" scope="japanese parliament" reference="eq"/>
+		<constraint name="c12" arity="2" scope="norwegian blue" reference="nextto"/>
+
+		<constraint name="c13" arity="2" scope="red green" reference="neq"/>
+		<constraint name="c14" arity="2" scope="red ivory" reference="neq"/>
+		<constraint name="c15" arity="2" scope="red yellow" reference="neq"/>
+		<constraint name="c16" arity="2" scope="red blue" reference="neq"/>
+		<constraint name="c17" arity="2" scope="green ivory" reference="neq"/>
+		<constraint name="c18" arity="2" scope="green yellow" reference="neq"/>
+		<constraint name="c19" arity="2" scope="green blue" reference="neq"/>
+		<constraint name="c20" arity="2" scope="ivory yellow" reference="neq"/>
+		<constraint name="c21" arity="2" scope="ivory blue" reference="neq"/>
+		<constraint name="c22" arity="2" scope="yellow blue" reference="neq"/>
+
+		<constraint name="c23" arity="2" scope="english spanish" reference="neq"/>
+		<constraint name="c24" arity="2" scope="english ukrainian" reference="neq"/>
+		<constraint name="c25" arity="2" scope="english norwegian" reference="neq"/>
+		<constraint name="c26" arity="2" scope="english japanese" reference="neq"/>
+		<constraint name="c27" arity="2" scope="spanish ukrainian" reference="neq"/>
+		<constraint name="c28" arity="2" scope="spanish norwegian" reference="neq"/>
+		<constraint name="c29" arity="2" scope="spanish japanese" reference="neq"/>
+		<constraint name="c30" arity="2" scope="ukrainian norwegian" reference="neq"/>
+		<constraint name="c31" arity="2" scope="ukrainian japanese" reference="neq"/>
+		<constraint name="c32" arity="2" scope="norwegian japanese" reference="neq"/>
+
+		<constraint name="c33" arity="2" scope="dog snail" reference="neq"/>
+		<constraint name="c34" arity="2" scope="dog fox" reference="neq"/>
+		<constraint name="c35" arity="2" scope="dog horse" reference="neq"/>
+		<constraint name="c36" arity="2" scope="dog zebra" reference="neq"/>
+		<constraint name="c37" arity="2" scope="snail fox" reference="neq"/>
+		<constraint name="c38" arity="2" scope="snail horse" reference="neq"/>
+		<constraint name="c39" arity="2" scope="snail zebra" reference="neq"/>
+		<constraint name="c40" arity="2" scope="fox horse" reference="neq"/>
+		<constraint name="c41" arity="2" scope="fox zebra" reference="neq"/>
+		<constraint name="c42" arity="2" scope="horse zebra" reference="neq"/>
+    
+		<constraint name="c43" arity="2" scope="coffee tea" reference="neq"/>
+		<constraint name="c44" arity="2" scope="coffee milk" reference="neq"/>
+		<constraint name="c45" arity="2" scope="coffee juice" reference="neq"/>
+		<constraint name="c46" arity="2" scope="coffee water" reference="neq"/>
+		<constraint name="c47" arity="2" scope="tea milk" reference="neq"/>
+		<constraint name="c48" arity="2" scope="tea juice" reference="neq"/>
+		<constraint name="c49" arity="2" scope="tea water" reference="neq"/>
+		<constraint name="c50" arity="2" scope="milk juice" reference="neq"/>
+		<constraint name="c51" arity="2" scope="milk water" reference="neq"/>
+		<constraint name="c52" arity="2" scope="juice water" reference="neq"/>
+    
+		<constraint name="c53" arity="2" scope="oldgold kools" reference="neq"/>
+		<constraint name="c54" arity="2" scope="oldgold chesterfield" reference="neq"/>
+		<constraint name="c55" arity="2" scope="oldgold lucky" reference="neq"/>
+		<constraint name="c56" arity="2" scope="oldgold parliament" reference="neq"/>
+		<constraint name="c57" arity="2" scope="kools chesterfield" reference="neq"/>
+		<constraint name="c58" arity="2" scope="kools lucky" reference="neq"/>
+		<constraint name="c59" arity="2" scope="kools parliament" reference="neq"/>
+		<constraint name="c60" arity="2" scope="chesterfield lucky" reference="neq"/>
+		<constraint name="c61" arity="2" scope="chesterfield parliament" reference="neq"/>
+		<constraint name="c62" arity="2" scope="lucky parliament" reference="neq"/>
+	</constraints>
+</instance> 

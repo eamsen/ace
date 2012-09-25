@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+<presentation name="200" maxConstraintArity="2" format="XCSP 2.0"/>
+<domains nbDomains="1">
+<domain name="D0" nbValues="10">0..9</domain>
+</domains>
+<variables nbVariables="125">
+<variable name="V10" domain="D0"/>
+<variable name="V103" domain="D0"/>
+<variable name="V104" domain="D0"/>
+<variable name="V107" domain="D0"/>
+<variable name="V109" domain="D0"/>
+<variable name="V110" domain="D0"/>
+<variable name="V113" domain="D0"/>
+<variable name="V114" domain="D0"/>
+<variable name="V115" domain="D0"/>
+<variable name="V116" domain="D0"/>
+<variable name="V117" domain="D0"/>
+<variable name="V120" domain="D0"/>
+<variable name="V122" domain="D0"/>
+<variable name="V123" domain="D0"/>
+<variable name="V124" domain="D0"/>
+<variable name="V125" domain="D0"/>
+<variable name="V126" domain="D0"/>
+<variable name="V127" domain="D0"/>
+<variable name="V128" domain="D0"/>
+<variable name="V13" domain="D0"/>
+<variable name="V132" domain="D0"/>
+<variable name="V133" domain="D0"/>
+<variable name="V134" domain="D0"/>
+<variable name="V135" domain="D0"/>
+<variable name="V138" domain="D0"/>
+<variable name="V140" domain="D0"/>
+<variable name="V141" domain="D0"/>
+<variable name="V142" domain="D0"/>
+<variable name="V143" domain="D0"/>
+<variable name="V144" domain="D0"/>
+<variable name="V145" domain="D0"/>
+<variable name="V146" domain="D0"/>
+<variable name="V147" domain="D0"/>
+<variable name="V149" domain="D0"/>
+<variable name="V151" domain="D0"/>
+<variable name="V152" domain="D0"/>
+<variable name="V153" domain="D0"/>
+<variable name="V157" domain="D0"/>
+<variable name="V158" domain="D0"/>
+<variable name="V16" domain="D0"/>
+<variable name="V160" domain="D0"/>
+<variable name="V161" domain="D0"/>
+<variable name="V162" domain="D0"/>
+<variable name="V163" domain="D0"/>
+<variable name="V164" domain="D0"/>
+<variable name="V165" domain="D0"/>
+<variable name="V168" domain="D0"/>
+<variable name="V169" domain="D0"/>
+<variable name="V170" domain="D0"/>
+<variable name="V172" domain="D0"/>
+<variable name="V173" domain="D0"/>
+<variable name="V174" domain="D0"/>
+<variable name="V175" domain="D0"/>
+<variable name="V178" domain="D0"/>
+<variable name="V179" domain="D0"/>
+<variable name="V181" domain="D0"/>
+<variable name="V182" domain="D0"/>
+<variable name="V184" domain="D0"/>
+<variable name="V185" domain="D0"/>
+<variable name="V186" domain="D0"/>
+<variable name="V187" domain="D0"/>
+<variable name="V188" domain="D0"/>
+<variable name="V189" domain="D0"/>
+<variable name="V19" domain="D0"/>
+<variable name="V190" domain="D0"/>
+<variable name="V194" domain="D0"/>
+<variable name="V195" domain="D0"/>
+<variable name="V197" domain="D0"/>
+<variable name="V199" domain="D0"/>
+<variable name="V2" domain="D0"/>
+<variable name="V200" domain="D0"/>
+<variable name="V25" domain="D0"/>
+<variable name="V26" domain="D0"/>
+<variable name="V27" domain="D0"/>
+<variable name="V28" domain="D0"/>
+<variable name="V29" domain="D0"/>
+<variable name="V3" domain="D0"/>
+<variable name="V30" domain="D0"/>
+<variable name="V31" domain="D0"/>
+<variable name="V34" domain="D0"/>
+<variable name="V36" domain="D0"/>
+<variable name="V37" domain="D0"/>
+<variable name="V38" domain="D0"/>
+<variable name="V39" domain="D0"/>
+<variable name="V4" domain="D0"/>
+<variable name="V40" domain="D0"/>
+<variable name="V43" domain="D0"/>
+<variable name="V44" domain="D0"/>
+<variable name="V46" domain="D0"/>
+<variable name="V48" domain="D0"/>
+<variable name="V49" domain="D0"/>
+<variable name="V5" domain="D0"/>
+<variable name="V50" domain="D0"/>
+<variable name="V51" domain="D0"/>
+<variable name="V52" domain="D0"/>
+<variable name="V53" domain="D0"/>
+<variable name="V54" domain="D0"/>
+<variable name="V55" domain="D0"/>
+<variable name="V57" domain="D0"/>
+<variable name="V59" domain="D0"/>
+<variable name="V6" domain="D0"/>
+<variable name="V62" domain="D0"/>
+<variable name="V64" domain="D0"/>
+<variable name="V65" domain="D0"/>
+<variable name="V66" domain="D0"/>
+<variable name="V67" domain="D0"/>
+<variable name="V7" domain="D0"/>
+<variable name="V70" domain="D0"/>
+<variable name="V71" domain="D0"/>
+<variable name="V72" domain="D0"/>
+<variable name="V73" domain="D0"/>
+<variable name="V76" domain="D0"/>
+<variable name="V77" domain="D0"/>
+<variable name="V79" domain="D0"/>
+<variable name="V8" domain="D0"/>
+<variable name="V80" domain="D0"/>
+<variable name="V82" domain="D0"/>
+<variable name="V83" domain="D0"/>
+<variable name="V86" domain="D0"/>
+<variable name="V88" domain="D0"/>
+<variable name="V9" domain="D0"/>
+<variable name="V94" domain="D0"/>
+<variable name="V95" domain="D0"/>
+<variable name="V96" domain="D0"/>
+<variable name="V99" domain="D0"/>
+</variables>
+<relations nbRelations="1">
+<relation name="R1" arity="2" nbTuples="8" semantics="supports">0 5 |1 0 |3 2 |3 9 |5 3 |6 8 |7 7 |8 5</relation>
+</relations>
+<constraints nbConstraints="90">
+<constraint name="C39" arity="2" scope="V117 V114" reference="R1"/>
+<constraint name="C38" arity="2" scope="V25 V31" reference="R1"/>
+<constraint name="C35" arity="2" scope="V185 V123" reference="R1"/>
+<constraint name="C34" arity="2" scope="V99 V7" reference="R1"/>
+<constraint name="C37" arity="2" scope="V95 V70" reference="R1"/>
+<constraint name="C36" arity="2" scope="V50 V163" reference="R1"/>
+<constraint name="C31" arity="2" scope="V146 V36" reference="R1"/>
+<constraint name="C30" arity="2" scope="V179 V140" reference="R1"/>
+<constraint name="C33" arity="2" scope="V145 V8" reference="R1"/>
+<constraint name="C32" arity="2" scope="V6 V127" reference="R1"/>
+<constraint name="C22" arity="2" scope="V48 V149" reference="R1"/>
+<constraint name="C23" arity="2" scope="V67 V122" reference="R1"/>
+<constraint name="C20" arity="2" scope="V80 V2" reference="R1"/>
+<constraint name="C21" arity="2" scope="V116 V178" reference="R1"/>
+<constraint name="C26" arity="2" scope="V54 V200" reference="R1"/>
+<constraint name="C27" arity="2" scope="V51 V48" reference="R1"/>
+<constraint name="C24" arity="2" scope="V36 V147" reference="R1"/>
+<constraint name="C25" arity="2" scope="V30 V76" reference="R1"/>
+<constraint name="C28" arity="2" scope="V104 V132" reference="R1"/>
+<constraint name="C29" arity="2" scope="V83 V190" reference="R1"/>
+<constraint name="C57" arity="2" scope="V82 V71" reference="R1"/>
+<constraint name="C56" arity="2" scope="V72 V52" reference="R1"/>
+<constraint name="C55" arity="2" scope="V169 V29" reference="R1"/>
+<constraint name="C54" arity="2" scope="V25 V26" reference="R1"/>
+<constraint name="C53" arity="2" scope="V76 V19" reference="R1"/>
+<constraint name="C52" arity="2" scope="V82 V4" reference="R1"/>
+<constraint name="C51" arity="2" scope="V197 V110" reference="R1"/>
+<constraint name="C50" arity="2" scope="V82 V122" reference="R1"/>
+<constraint name="C59" arity="2" scope="V162 V50" reference="R1"/>
+<constraint name="C58" arity="2" scope="V138 V64" reference="R1"/>
+<constraint name="C44" arity="2" scope="V135 V140" reference="R1"/>
+<constraint name="C45" arity="2" scope="V109 V152" reference="R1"/>
+<constraint name="C46" arity="2" scope="V178 V151" reference="R1"/>
+<constraint name="C47" arity="2" scope="V43 V187" reference="R1"/>
+<constraint name="C40" arity="2" scope="V86 V27" reference="R1"/>
+<constraint name="C41" arity="2" scope="V189 V138" reference="R1"/>
+<constraint name="C42" arity="2" scope="V9 V160" reference="R1"/>
+<constraint name="C43" arity="2" scope="V57 V134" reference="R1"/>
+<constraint name="C48" arity="2" scope="V140 V52" reference="R1"/>
+<constraint name="C49" arity="2" scope="V40 V44" reference="R1"/>
+<constraint name="C79" arity="2" scope="V55 V172" reference="R1"/>
+<constraint name="C78" arity="2" scope="V132 V143" reference="R1"/>
+<constraint name="C71" arity="2" scope="V117 V153" reference="R1"/>
+<constraint name="C70" arity="2" scope="V88 V123" reference="R1"/>
+<constraint name="C73" arity="2" scope="V126 V170" reference="R1"/>
+<constraint name="C72" arity="2" scope="V195 V125" reference="R1"/>
+<constraint name="C75" arity="2" scope="V124 V83" reference="R1"/>
+<constraint name="C74" arity="2" scope="V188 V122" reference="R1"/>
+<constraint name="C77" arity="2" scope="V49 V65" reference="R1"/>
+<constraint name="C76" arity="2" scope="V158 V122" reference="R1"/>
+<constraint name="C9" arity="2" scope="V172 V3" reference="R1"/>
+<constraint name="C8" arity="2" scope="V141 V173" reference="R1"/>
+<constraint name="C3" arity="2" scope="V77 V174" reference="R1"/>
+<constraint name="C2" arity="2" scope="V168 V133" reference="R1"/>
+<constraint name="C1" arity="2" scope="V73 V160" reference="R1"/>
+<constraint name="C7" arity="2" scope="V164 V107" reference="R1"/>
+<constraint name="C6" arity="2" scope="V46 V184" reference="R1"/>
+<constraint name="C5" arity="2" scope="V115 V99" reference="R1"/>
+<constraint name="C4" arity="2" scope="V59 V190" reference="R1"/>
+<constraint name="C68" arity="2" scope="V170 V157" reference="R1"/>
+<constraint name="C69" arity="2" scope="V70 V199" reference="R1"/>
+<constraint name="C66" arity="2" scope="V182 V10" reference="R1"/>
+<constraint name="C67" arity="2" scope="V59 V95" reference="R1"/>
+<constraint name="C64" arity="2" scope="V50 V174" reference="R1"/>
+<constraint name="C65" arity="2" scope="V161 V53" reference="R1"/>
+<constraint name="C62" arity="2" scope="V94 V96" reference="R1"/>
+<constraint name="C63" arity="2" scope="V4 V165" reference="R1"/>
+<constraint name="C60" arity="2" scope="V65 V72" reference="R1"/>
+<constraint name="C61" arity="2" scope="V19 V164" reference="R1"/>
+<constraint name="C19" arity="2" scope="V16 V194" reference="R1"/>
+<constraint name="C18" arity="2" scope="V59 V82" reference="R1"/>
+<constraint name="C13" arity="2" scope="V114 V43" reference="R1"/>
+<constraint name="C12" arity="2" scope="V38 V62" reference="R1"/>
+<constraint name="C11" arity="2" scope="V164 V181" reference="R1"/>
+<constraint name="C10" arity="2" scope="V5 V113" reference="R1"/>
+<constraint name="C17" arity="2" scope="V153 V6" reference="R1"/>
+<constraint name="C16" arity="2" scope="V79 V34" reference="R1"/>
+<constraint name="C15" arity="2" scope="V80 V153" reference="R1"/>
+<constraint name="C14" arity="2" scope="V54 V128" reference="R1"/>
+<constraint name="C90" arity="2" scope="V28 V67" reference="R1"/>
+<constraint name="C80" arity="2" scope="V142 V7" reference="R1"/>
+<constraint name="C81" arity="2" scope="V120 V66" reference="R1"/>
+<constraint name="C82" arity="2" scope="V181 V175" reference="R1"/>
+<constraint name="C83" arity="2" scope="V132 V144" reference="R1"/>
+<constraint name="C84" arity="2" scope="V13 V73" reference="R1"/>
+<constraint name="C85" arity="2" scope="V103 V186" reference="R1"/>
+<constraint name="C86" arity="2" scope="V37 V122" reference="R1"/>
+<constraint name="C87" arity="2" scope="V82 V120" reference="R1"/>
+<constraint name="C88" arity="2" scope="V39 V107" reference="R1"/>
+<constraint name="C89" arity="2" scope="V71 V5" reference="R1"/>
+</constraints>
+</instance>

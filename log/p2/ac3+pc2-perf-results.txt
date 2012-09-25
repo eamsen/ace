@@ -1,0 +1,80 @@
+File: project_2_benchmarks/hanoi-3.xml
+AC3: consistent (106 removed)
+AC3 iterations: 18
+AC3 time: 50µs
+PC2: consistent (0 removed)
+PC2 iterations: 0
+PC2 time: 5µs
+SAT
+Iterations: 7
+Solve time: 29µs
+Total time: 84µs
+ 
+File: project_2_benchmarks/hanoi-5.xml
+AC3: consistent (6778 removed)
+AC3 iterations: 114
+AC3 time: 38.65ms
+PC2: consistent (0 removed)
+PC2 iterations: 0
+PC2 time: 5µs
+SAT
+Iterations: 31
+Solve time: 205µs
+Total time: 38.86ms
+ 
+File: project_2_benchmarks/hanoi-7.xml
+AC3: consistent (271066 removed)
+AC3 iterations: 498
+AC3 time: 17.71s
+PC2: consistent (0 removed)
+PC2 iterations: 0
+PC2 time: 24µs
+SAT
+Iterations: 127
+Solve time: 2.54ms
+Total time: 17.71s
+ 
+File: project_2_benchmarks/knights-10-5.xml
+AC3: consistent (0 removed)
+AC3 iterations: 20
+AC3 time: 2.14ms
+PC2: inconsistent (17840 removed)
+PC2 iterations: 6
+PC2 time: 136.91ms
+UNSAT
+Total time: 139.05ms
+ 
+File: project_2_benchmarks/knights-8-5.xml
+AC3: consistent (0 removed)
+AC3 iterations: 20
+AC3 time: 717µs
+PC2: inconsistent (6984 removed)
+PC2 iterations: 6
+PC2 time: 39.38ms
+UNSAT
+Total time: 40.10ms
+ 
+File: project_2_benchmarks/sudoku-1.xml
+AC3: consistent (392 removed)
+AC3 iterations: 8842
+AC3 time: 3.02ms
+PC2: consistent (22991 removed)
+PC2 iterations: 27997
+PC2 time: 19.31ms
+SAT
+Iterations: 82
+Solve time: 2.09ms
+Total time: 24.42ms
+ 
+File: project_2_benchmarks/sudoku-2.xml
+AC3: consistent (257 removed)
+AC3 iterations: 6455
+AC3 time: 4.60ms
+PC2: consistent (26412 removed)
+PC2 iterations: 37698
+PC2 time: 173.01ms
+SAT
+Iterations: 241967
+Solve time: 50.56s
+Total time: 50.74s
+ 

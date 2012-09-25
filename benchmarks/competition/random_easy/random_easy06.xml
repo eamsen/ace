@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+<presentation name="30" maxConstraintArity="2" format="XCSP 2.0"/>
+<domains nbDomains="1">
+<domain name="D0" nbValues="10">0..9</domain>
+</domains>
+<variables nbVariables="15">
+<variable name="V1" domain="D0"/>
+<variable name="V11" domain="D0"/>
+<variable name="V14" domain="D0"/>
+<variable name="V15" domain="D0"/>
+<variable name="V16" domain="D0"/>
+<variable name="V2" domain="D0"/>
+<variable name="V22" domain="D0"/>
+<variable name="V23" domain="D0"/>
+<variable name="V24" domain="D0"/>
+<variable name="V26" domain="D0"/>
+<variable name="V29" domain="D0"/>
+<variable name="V3" domain="D0"/>
+<variable name="V4" domain="D0"/>
+<variable name="V7" domain="D0"/>
+<variable name="V8" domain="D0"/>
+</variables>
+<relations nbRelations="3">
+<relation name="R1" arity="2" nbTuples="8" semantics="supports">0 4 |1 5 |1 9 |3 2 |6 1 |6 7 |7 8 |9 3</relation>
+<relation name="R2" arity="2" nbTuples="6" semantics="supports">0 2 |1 2 |1 6 |5 9 |9 0 |9 1</relation>
+<relation name="R3" arity="2" nbTuples="7" semantics="supports">1 1 |4 0 |5 2 |5 5 |6 1 |6 8 |9 5</relation>
+</relations>
+<constraints nbConstraints="12">
+<constraint name="C11" arity="2" scope="V23 V3" reference="R3"/>
+<constraint name="C9" arity="2" scope="V8 V15" reference="R1"/>
+<constraint name="C8" arity="2" scope="V16 V22" reference="R3"/>
+<constraint name="C12" arity="2" scope="V11 V15" reference="R3"/>
+<constraint name="C3" arity="2" scope="V7 V23" reference="R2"/>
+<constraint name="C2" arity="2" scope="V23 V24" reference="R1"/>
+<constraint name="C1" arity="2" scope="V2 V15" reference="R2"/>
+<constraint name="C10" arity="2" scope="V26 V4" reference="R1"/>
+<constraint name="C7" arity="2" scope="V22 V23" reference="R3"/>
+<constraint name="C6" arity="2" scope="V23 V14" reference="R2"/>
+<constraint name="C5" arity="2" scope="V29 V22" reference="R3"/>
+<constraint name="C4" arity="2" scope="V1 V7" reference="R2"/>
+</constraints>
+</instance>

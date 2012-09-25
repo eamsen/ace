@@ -1,0 +1,47 @@
+<instance>
+<presentation name="6queens" maxConstraintArity="2" format="XCSP 2.0"/>
+
+<domains nbDomains="1">
+<domain name="D0" nbValues="6">1..6</domain>
+</domains>
+
+
+<variables nbVariables="6">
+<variable name="Q1" domain="D0"/>
+<variable name="Q2" domain="D0"/>
+<variable name="Q3" domain="D0"/>
+<variable name="Q4" domain="D0"/>
+<variable name="Q5" domain="D0"/>
+<variable name="Q6" domain="D0"/>
+</variables>
+
+<relations nbRelations="5">
+<relation name="dist1" arity="2" nbTuples="16" semantics="conflicts">1 1|1 2|2 1|2 2|2 3|3 2|3 3|3 4|4 3|4 4|4 5|5 4|5 5|5 6|6 5|6 6</relation>
+
+<relation name="dist2" arity="2" nbTuples="14" semantics="conflicts">1 1|1 3|2 2|2 4|3 1|3 3|3 5|4 2|4 4|4 6|5 3|5 5|6 4|6 6</relation>
+
+<relation name="dist3" arity="2" nbTuples="12" semantics="conflicts">1 1|1 4|2 2|2 5|3 3|3 6|4 1|4 4|5 2|5 5|6 3|6 6</relation>
+
+<relation name="dist4" arity="2" nbTuples="10" semantics="conflicts">1 1|1 5|2 2|2 6|3 3|4 4|5 1|5 5|6 2|6 6</relation>
+
+<relation name="dist5" arity="2" nbTuples="8" semantics="conflicts">1 1|1 6|2 2|3 3|4 4|5 5|6 1|6 6</relation>
+</relations>
+
+<constraints nbConstraints="15">
+<constraint name="C0" arity="2" scope="Q1 Q2" reference="dist1"></constraint>
+<constraint name="C1" arity="2" scope="Q1 Q3" reference="dist2"></constraint>
+<constraint name="C2" arity="2" scope="Q1 Q4" reference="dist3"></constraint>
+<constraint name="C3" arity="2" scope="Q1 Q5" reference="dist4"></constraint>
+<constraint name="C4" arity="2" scope="Q1 Q6" reference="dist5"></constraint>
+<constraint name="C5" arity="2" scope="Q2 Q3" reference="dist1"></constraint>
+<constraint name="C6" arity="2" scope="Q2 Q4" reference="dist2"></constraint>
+<constraint name="C7" arity="2" scope="Q2 Q5" reference="dist3"></constraint>
+<constraint name="C8" arity="2" scope="Q2 Q6" reference="dist4"></constraint>
+<constraint name="C9" arity="2" scope="Q3 Q4" reference="dist1"></constraint>
+<constraint name="C10" arity="2" scope="Q3 Q5" reference="dist2"></constraint>
+<constraint name="C11" arity="2" scope="Q3 Q6" reference="dist3"></constraint>
+<constraint name="C12" arity="2" scope="Q4 Q5" reference="dist1"></constraint>
+<constraint name="C13" arity="2" scope="Q4 Q6" reference="dist2"></constraint>
+<constraint name="C14" arity="2" scope="Q5 Q6" reference="dist1"></constraint>
+</constraints>
+</instance>

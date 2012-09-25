@@ -1,0 +1,290 @@
+File: benchmarks/advanced/normalized-dsjc-125-1-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 1472
+AC3 time: 760µs
+UNSAT
+Explored: 656860 of 1.80925e+75 (3.63056e-68%)
+Backtracks: 656860
+Parse time: 34.72ms
+Construction time: 4.81ms
+Preprocess time: 760µs
+Solve time: 1.84min
+Total time: 1.84min
+ 
+File: benchmarks/advanced/normalized-dsjc-125-1-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 1472
+AC3 time: 997µs
+INDETERMINATE
+Explored: 2.25716e+06 of 2.35099e+87 (9.60091e-80%)
+Backtracks: 2257164
+Parse time: 34.48ms
+Construction time: 8.01ms
+Preprocess time: 997µs
+Solve time: 5.00min
+Total time: 5.00min
+ 
+File: benchmarks/advanced/normalized-geom-30a-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 162
+AC3 time: 85µs
+UNSAT
+Explored: 93 of 2.05891e+14 (4.51695e-11%)
+Backtracks: 93
+Parse time: 1.32ms
+Construction time: 353µs
+Preprocess time: 85µs
+Solve time: 1.66ms
+Total time: 3.42ms
+ 
+File: benchmarks/advanced/normalized-geom-30a-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 162
+AC3 time: 88µs
+UNSAT
+Explored: 6036 of 1.15292e+18 (5.2354e-13%)
+Backtracks: 6036
+Parse time: 2.11ms
+Construction time: 380µs
+Preprocess time: 88µs
+Solve time: 109.86ms
+Total time: 112.44ms
+ 
+File: benchmarks/advanced/normalized-geom-30a-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 162
+AC3 time: 124µs
+UNSAT
+Explored: 135455 of 9.31323e+20 (1.45444e-14%)
+Backtracks: 135455
+Parse time: 1.32ms
+Construction time: 407µs
+Preprocess time: 124µs
+Solve time: 4.33s
+Total time: 4.34s
+ 
+File: benchmarks/advanced/normalized-geom-30a-6-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 162
+AC3 time: 129µs
+SAT
+
+Explored: 30 of 2.21074e+23 (1.35701e-20%)
+Backtracks: 0
+Parse time: 1.35ms
+Construction time: 44µs
+Preprocess time: 129µs
+Solve time: 526µs
+Total time: 2.05ms
+ 
+File: benchmarks/advanced/normalized-geom-40-2-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 60µs
+UNSAT
+Explored: 2 of 1.09951e+12 (1.81899e-10%)
+Backtracks: 2
+Parse time: 1.35ms
+Construction time: 368µs
+Preprocess time: 60µs
+Solve time: 15µs
+Total time: 1.79ms
+ 
+File: benchmarks/advanced/normalized-geom-40-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 83µs
+UNSAT
+Explored: 9 of 1.21577e+19 (7.40274e-17%)
+Backtracks: 9
+Parse time: 1.38ms
+Construction time: 325µs
+Preprocess time: 83µs
+Solve time: 169µs
+Total time: 1.95ms
+ 
+File: benchmarks/advanced/normalized-geom-40-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 85µs
+UNSAT
+Explored: 3976 of 1.20893e+24 (3.28887e-19%)
+Backtracks: 3976
+Parse time: 1.47ms
+Construction time: 329µs
+Preprocess time: 85µs
+Solve time: 45.95ms
+Total time: 47.84ms
+ 
+File: benchmarks/advanced/normalized-geom-40-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 0µs
+UNSAT
+Explored: 2.93659e+07 of 9.09495e+27 (3.22881e-19%)
+Backtracks: 29365885
+Parse time: 1.35ms
+Construction time: 0µs
+Preprocess time: 0µs
+Solve time: 4.73min
+Total time: 4.73min
+ 
+File: benchmarks/advanced/normalized-geom-40-6-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 128µs
+SAT
+
+Explored: 40 of 1.33675e+31 (2.99233e-28%)
+Backtracks: 0
+Parse time: 1.35ms
+Construction time: 359µs
+Preprocess time: 128µs
+Solve time: 658µs
+Total time: 2.50ms
+ 
+File: benchmarks/advanced/normalized-le-450-5a-2-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 11428
+AC3 time: 5.09ms
+UNSAT
+Explored: 2 of 2.90735e+135 (6.87911e-134%)
+Backtracks: 2
+Parse time: 1.70s
+Construction time: 66.52ms
+Preprocess time: 5.09ms
+Solve time: 285µs
+Total time: 1.77s
+ 
+File: benchmarks/advanced/normalized-le-450-5a-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 11428
+AC3 time: 5.83ms
+UNSAT
+Explored: 54 of 5.06483e+214 (1.06618e-211%)
+Backtracks: 54
+Parse time: 1.69s
+Construction time: 67.99ms
+Preprocess time: 5.83ms
+Solve time: 15.30ms
+Total time: 1.78s
+ 
+File: benchmarks/advanced/normalized-le-450-5a-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 11428
+AC3 time: 5.84ms
+UNSAT
+Explored: 365268 of 8.45271e+270 (4.32131e-264%)
+Backtracks: 365268
+Parse time: 1.70s
+Construction time: 68.42ms
+Preprocess time: 5.84ms
+Solve time: 2.49min
+Total time: 2.52min
+ 
+File: benchmarks/advanced/normalized-le-450-5a-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 11428
+AC3 time: 8.55ms
+INDETERMINATE
+Explored: 386731 of inf (0%)
+Backtracks: 386731
+Parse time: 1.69s
+Construction time: 70.83ms
+Preprocess time: 8.55ms
+Solve time: 4.97min
+Total time: 5.00min
+ 
+File: benchmarks/advanced/normalized-myciel-5g-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 472
+AC3 time: 271µs
+UNSAT
+Explored: 45 of 2.65888e+22 (1.69244e-19%)
+Backtracks: 45
+Parse time: 5.72ms
+Construction time: 1.46ms
+Preprocess time: 271µs
+Solve time: 2.32ms
+Total time: 9.78ms
+ 
+File: benchmarks/advanced/normalized-myciel-5g-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 472
+AC3 time: 254µs
+UNSAT
+Explored: 10816 of 1.9807e+28 (5.46068e-23%)
+Backtracks: 10816
+Parse time: 5.61ms
+Construction time: 1.38ms
+Preprocess time: 254µs
+Solve time: 459.86ms
+Total time: 467.10ms
+ 
+File: benchmarks/advanced/normalized-myciel-5g-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 472
+AC3 time: 330µs
+INDETERMINATE
+Explored: 1.01544e+07 of 7.10543e+32 (1.42911e-24%)
+Backtracks: 10154436
+Parse time: 5.10ms
+Construction time: 1.56ms
+Preprocess time: 330µs
+Solve time: 5.00min
+Total time: 5.00min
+ 
+File: benchmarks/advanced/normalized-myciel-5g-6-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 472
+AC3 time: 366µs
+SAT
+
+Explored: 47 of 3.74204e+36 (1.256e-33%)
+Backtracks: 0
+Parse time: 5.67ms
+Construction time: 1.07ms
+Preprocess time: 366µs
+Solve time: 1.49ms
+Total time: 8.60ms
+ 
+File: benchmarks/advanced/normalized-queens-5-5-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 320
+AC3 time: 166µs
+UNSAT
+Explored: 9 of 8.47289e+11 (1.06221e-09%)
+Backtracks: 9
+Parse time: 3.42ms
+Construction time: 965µs
+Preprocess time: 166µs
+Solve time: 339µs
+Total time: 4.89ms
+ 
+File: benchmarks/advanced/normalized-queens-5-5-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 320
+AC3 time: 184µs
+UNSAT
+Explored: 40 of 1.1259e+15 (3.55271e-12%)
+Backtracks: 40
+Parse time: 3.04ms
+Construction time: 654µs
+Preprocess time: 184µs
+Solve time: 1.99ms
+Total time: 5.88ms
+ 
+File: benchmarks/advanced/normalized-queens-5-5-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 320
+AC3 time: 244µs
+SAT
+
+Explored: 25 of 2.98023e+17 (8.38861e-15%)
+Backtracks: 0
+Parse time: 2.89ms
+Construction time: 901µs
+Preprocess time: 244µs
+Solve time: 813µs
+Total time: 4.85ms
+ 

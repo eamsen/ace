@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<instance>
+<presentation name="tetravex" maxConstraintArity="2" format="XCSP 2.0"/>
+
+<domains nbDomains="1">
+<domain name="D0" nbValues="4">1..4</domain>
+</domains>
+
+<variables nbVariables="4">
+<variable name="V0" domain="D0"/>
+<variable name="V1" domain="D0"/>
+<variable name="V2" domain="D0"/>
+<variable name="V3" domain="D0"/>
+</variables>
+
+<relations nbRelations="3">
+<relation name="neq" arity="2" nbTuples="4" semantics="conflicts">1 1|2 2|3 3|4 4</relation>
+<relation name="hor_match" arity="2" nbTuples="8" semantics="supports">1 2|1 3|2 1|2 4|3 2|3 3|4 2|4 3</relation>
+<relation name="vert_match" arity="2" nbTuples="8" semantics="supports">1 1|1 2|2 3|2 4|3 3|3 4|4 3|4 4</relation>
+</relations>
+
+<constraints nbConstraints="10">
+<constraint name="C0" arity="2" scope="V0 V1" reference="neq"/>
+<constraint name="C1" arity="2" scope="V0 V3" reference="neq"/>
+<constraint name="C2" arity="2" scope="V1 V3" reference="neq"/>
+<constraint name="C3" arity="2" scope="V2 V1" reference="hor_match"/>
+<constraint name="C4" arity="2" scope="V1 V3" reference="vert_match"/>
+<constraint name="C5" arity="2" scope="V2 V0" reference="vert_match"/>
+<constraint name="C6" arity="2" scope="V0 V3" reference="hor_match"/>
+<constraint name="C7" arity="2" scope="V2 V1" reference="neq"/>
+<constraint name="C8" arity="2" scope="V2 V3" reference="neq"/>
+<constraint name="C9" arity="2" scope="V2 V0" reference="neq"/>
+</constraints>
+</instance>

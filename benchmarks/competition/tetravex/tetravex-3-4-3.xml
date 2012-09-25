@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<instance>
+<presentation name="tetravex" maxConstraintArity="2" format="XCSP 2.0"/>
+
+<domains nbDomains="1">
+<domain name="D0" nbValues="9">1..9</domain>
+</domains>
+
+<variables nbVariables="9">
+<variable name="V0" domain="D0"/>
+<variable name="V1" domain="D0"/>
+<variable name="V2" domain="D0"/>
+<variable name="V3" domain="D0"/>
+<variable name="V4" domain="D0"/>
+<variable name="V5" domain="D0"/>
+<variable name="V6" domain="D0"/>
+<variable name="V7" domain="D0"/>
+<variable name="V8" domain="D0"/>
+</variables>
+
+<relations nbRelations="3">
+<relation name="neq" arity="2" nbTuples="9" semantics="conflicts">1 1|2 2|3 3|4 4|5 5|6 6|7 7|8 8|9 9</relation>
+<relation name="hor_match" arity="2" nbTuples="25" semantics="supports">1 3|1 4|1 8|2 2|2 5|2 6|2 9|3 2|3 5|3 6|3 9|4 7|5 3|5 4|5 8|6 2|6 5|6 6|6 9|7 2|7 5|7 6|7 9|8 1|9 7</relation>
+<relation name="vert_match" arity="2" nbTuples="21" semantics="supports">1 2|1 3|2 2|2 3|3 2|3 3|4 5|4 7|5 1|5 6|5 9|6 1|6 6|6 9|7 4|7 8|8 1|8 6|8 9|9 2|9 3</relation>
+</relations>
+
+<constraints nbConstraints="48">
+<constraint name="C0" arity="2" scope="V4 V0" reference="neq"/>
+<constraint name="C1" arity="2" scope="V6 V0" reference="vert_match"/>
+<constraint name="C2" arity="2" scope="V8 V3" reference="neq"/>
+<constraint name="C3" arity="2" scope="V7 V5" reference="neq"/>
+<constraint name="C4" arity="2" scope="V7 V6" reference="neq"/>
+<constraint name="C5" arity="2" scope="V3 V6" reference="neq"/>
+<constraint name="C6" arity="2" scope="V8 V7" reference="vert_match"/>
+<constraint name="C7" arity="2" scope="V8 V5" reference="hor_match"/>
+<constraint name="C8" arity="2" scope="V1 V6" reference="neq"/>
+<constraint name="C9" arity="2" scope="V1 V4" reference="neq"/>
+<constraint name="C10" arity="2" scope="V7 V4" reference="neq"/>
+<constraint name="C11" arity="2" scope="V5 V2" reference="neq"/>
+<constraint name="C12" arity="2" scope="V7 V0" reference="neq"/>
+<constraint name="C13" arity="2" scope="V4 V5" reference="vert_match"/>
+<constraint name="C14" arity="2" scope="V1 V4" reference="hor_match"/>
+<constraint name="C15" arity="2" scope="V7 V3" reference="neq"/>
+<constraint name="C16" arity="2" scope="V2 V0" reference="neq"/>
+<constraint name="C17" arity="2" scope="V1 V8" reference="vert_match"/>
+<constraint name="C18" arity="2" scope="V6 V0" reference="neq"/>
+<constraint name="C19" arity="2" scope="V2 V6" reference="vert_match"/>
+<constraint name="C20" arity="2" scope="V1 V2" reference="neq"/>
+<constraint name="C21" arity="2" scope="V3 V2" reference="neq"/>
+<constraint name="C22" arity="2" scope="V3 V0" reference="hor_match"/>
+<constraint name="C23" arity="2" scope="V1 V0" reference="neq"/>
+<constraint name="C24" arity="2" scope="V5 V3" reference="neq"/>
+<constraint name="C25" arity="2" scope="V8 V6" reference="neq"/>
+<constraint name="C26" arity="2" scope="V4 V2" reference="neq"/>
+<constraint name="C27" arity="2" scope="V1 V8" reference="neq"/>
+<constraint name="C28" arity="2" scope="V4 V6" reference="neq"/>
+<constraint name="C29" arity="2" scope="V4 V5" reference="neq"/>
+<constraint name="C30" arity="2" scope="V4 V3" reference="neq"/>
+<constraint name="C31" arity="2" scope="V5 V0" reference="neq"/>
+<constraint name="C32" arity="2" scope="V8 V5" reference="neq"/>
+<constraint name="C33" arity="2" scope="V1 V5" reference="neq"/>
+<constraint name="C34" arity="2" scope="V8 V7" reference="neq"/>
+<constraint name="C35" arity="2" scope="V8 V4" reference="neq"/>
+<constraint name="C36" arity="2" scope="V5 V6" reference="hor_match"/>
+<constraint name="C37" arity="2" scope="V5 V6" reference="neq"/>
+<constraint name="C38" arity="2" scope="V1 V3" reference="neq"/>
+<constraint name="C39" arity="2" scope="V3 V0" reference="neq"/>
+<constraint name="C40" arity="2" scope="V7 V2" reference="neq"/>
+<constraint name="C41" arity="2" scope="V4 V2" reference="hor_match"/>
+<constraint name="C42" arity="2" scope="V2 V6" reference="neq"/>
+<constraint name="C43" arity="2" scope="V1 V7" reference="neq"/>
+<constraint name="C44" arity="2" scope="V5 V3" reference="vert_match"/>
+<constraint name="C45" arity="2" scope="V8 V2" reference="neq"/>
+<constraint name="C46" arity="2" scope="V7 V3" reference="hor_match"/>
+<constraint name="C47" arity="2" scope="V8 V0" reference="neq"/>
+</constraints>
+</instance>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+<presentation name="50" maxConstraintArity="2" format="XCSP 2.0"/>
+<domains nbDomains="1">
+<domain name="D0" nbValues="10">0..9</domain>
+</domains>
+<variables nbVariables="28">
+<variable name="V10" domain="D0"/>
+<variable name="V12" domain="D0"/>
+<variable name="V14" domain="D0"/>
+<variable name="V15" domain="D0"/>
+<variable name="V16" domain="D0"/>
+<variable name="V19" domain="D0"/>
+<variable name="V2" domain="D0"/>
+<variable name="V21" domain="D0"/>
+<variable name="V23" domain="D0"/>
+<variable name="V25" domain="D0"/>
+<variable name="V26" domain="D0"/>
+<variable name="V28" domain="D0"/>
+<variable name="V3" domain="D0"/>
+<variable name="V30" domain="D0"/>
+<variable name="V31" domain="D0"/>
+<variable name="V33" domain="D0"/>
+<variable name="V34" domain="D0"/>
+<variable name="V36" domain="D0"/>
+<variable name="V37" domain="D0"/>
+<variable name="V39" domain="D0"/>
+<variable name="V42" domain="D0"/>
+<variable name="V43" domain="D0"/>
+<variable name="V45" domain="D0"/>
+<variable name="V47" domain="D0"/>
+<variable name="V49" domain="D0"/>
+<variable name="V50" domain="D0"/>
+<variable name="V6" domain="D0"/>
+<variable name="V9" domain="D0"/>
+</variables>
+<relations nbRelations="9">
+<relation name="R1" arity="2" nbTuples="9" semantics="supports">0 3 |0 4 |1 7 |2 1 |2 3 |5 4 |7 6 |7 9 |8 7</relation>
+<relation name="R10" arity="2" nbTuples="8" semantics="supports">0 1 |0 6 |6 6 |6 9 |8 9 |9 0 |9 1 |9 3</relation>
+<relation name="R3" arity="2" nbTuples="10" semantics="supports">0 0 |0 7 |1 9 |2 8 |3 9 |4 1 |4 7 |8 9 |9 1 |9 6</relation>
+<relation name="R4" arity="2" nbTuples="11" semantics="supports">1 1 |1 5 |1 6 |1 9 |2 0 |2 8 |6 2 |6 5 |6 6 |8 0 |8 7</relation>
+<relation name="R5" arity="2" nbTuples="6" semantics="supports">0 1 |1 4 |3 3 |3 7 |8 3 |8 5</relation>
+<relation name="R6" arity="2" nbTuples="10" semantics="supports">0 9 |3 3 |3 8 |5 2 |5 7 |6 0 |6 7 |7 3 |8 8 |9 5</relation>
+<relation name="R7" arity="2" nbTuples="11" semantics="supports">0 3 |1 7 |2 9 |3 9 |4 9 |6 1 |6 3 |8 2 |8 5 |9 3 |9 4</relation>
+<relation name="R8" arity="2" nbTuples="9" semantics="supports">0 3 |2 1 |2 6 |3 3 |3 8 |5 0 |5 2 |6 0 |7 4</relation>
+<relation name="R9" arity="2" nbTuples="7" semantics="supports">2 0 |2 1 |2 5 |3 9 |4 4 |7 8 |8 7</relation>
+</relations>
+<constraints nbConstraints="20">
+<constraint name="C20" arity="2" scope="V12 V14" reference="R5"/>
+<constraint name="C17" arity="2" scope="V26 V9" reference="R9"/>
+<constraint name="C18" arity="2" scope="V28 V23" reference="R3"/>
+<constraint name="C11" arity="2" scope="V49 V37" reference="R9"/>
+<constraint name="C19" arity="2" scope="V33 V6" reference="R10"/>
+<constraint name="C16" arity="2" scope="V25 V19" reference="R7"/>
+<constraint name="C13" arity="2" scope="V37 V39" reference="R3"/>
+<constraint name="C9" arity="2" scope="V10 V31" reference="R5"/>
+<constraint name="C8" arity="2" scope="V9 V30" reference="R3"/>
+<constraint name="C14" arity="2" scope="V16 V3" reference="R6"/>
+<constraint name="C15" arity="2" scope="V21 V42" reference="R1"/>
+<constraint name="C12" arity="2" scope="V45 V50" reference="R8"/>
+<constraint name="C3" arity="2" scope="V43 V2" reference="R4"/>
+<constraint name="C2" arity="2" scope="V36 V16" reference="R10"/>
+<constraint name="C1" arity="2" scope="V28 V30" reference="R7"/>
+<constraint name="C10" arity="2" scope="V16 V23" reference="R6"/>
+<constraint name="C7" arity="2" scope="V2 V50" reference="R6"/>
+<constraint name="C6" arity="2" scope="V34 V47" reference="R7"/>
+<constraint name="C5" arity="2" scope="V28 V31" reference="R3"/>
+<constraint name="C4" arity="2" scope="V12 V15" reference="R9"/>
+</constraints>
+</instance>

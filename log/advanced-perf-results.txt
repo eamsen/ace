@@ -1,0 +1,314 @@
+File: benchmarks/advanced/normalized-dsjc-125-1-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 1472
+AC3 time: 779µs
+UNSAT
+
+Explored: 40 of 1.80925e+75 (2.21086e-72%)
+Backtracks: 40
+Parse time: 37.26ms
+Construction time: 4.62ms
+Preprocess time: 779µs
+Solve time: 16.80ms
+Total time: 59.47ms
+ 
+File: benchmarks/advanced/normalized-dsjc-125-1-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 1472
+AC3 time: 1.11ms
+SAT
+V0: 0, V1: 1, V2: 3, V3: 0, V4: 3, V5: 2, V6: 0, V7: 3, V8: 4, V9: 3, V10: 3, V11: 0, V12: 1, V13: 3, V14: 0, V15: 2, V16: 3, V17: 4, V18: 2, V19: 2, V20: 1, V21: 4, V22: 3, V23: 3, V24: 0, V25: 1, V26: 3, V27: 0, V28: 4, V29: 2, V30: 2, V31: 0, V32: 4, V33: 2, V34: 4, V35: 1, V36: 3, V37: 1, V38: 3, V39: 4, V40: 1, V41: 1, V42: 2, V43: 3, V44: 1, V45: 2, V46: 3, V47: 4, V48: 0, V49: 2, V50: 2, V51: 1, V52: 1, V53: 1, V54: 3, V55: 0, V56: 4, V57: 4, V58: 0, V59: 2, V60: 0, V61: 4, V62: 0, V63: 2, V64: 2, V65: 1, V66: 0, V67: 3, V68: 3, V69: 1, V70: 2, V71: 2, V72: 1, V73: 4, V74: 3, V75: 1, V76: 1, V77: 1, V78: 2, V79: 2, V80: 4, V81: 0, V82: 0, V83: 2, V84: 1, V85: 1, V86: 4, V87: 2, V88: 3, V89: 2, V90: 0, V91: 2, V92: 3, V93: 0, V94: 4, V95: 2, V96: 0, V97: 4, V98: 4, V99: 2, V100: 3, V101: 4, V102: 4, V103: 3, V104: 4, V105: 4, V106: 3, V107: 3, V108: 4, V109: 4, V110: 3, V111: 2, V112: 4, V113: 3, V114: 0, V115: 4, V116: 3, V117: 2, V118: 0, V119: 1, V120: 0, V121: 4, V122: 1, V123: 1, V124: 3
+
+Explored: 3433 of 2.35099e+87 (1.46024e-82%)
+Backtracks: 3308
+Parse time: 34.28ms
+Construction time: 5.43ms
+Preprocess time: 1.11ms
+Solve time: 402.76ms
+Total time: 443.58ms
+ 
+File: benchmarks/advanced/normalized-geom-30a-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 162
+AC3 time: 167µs
+UNSAT
+
+Explored: 9 of 2.05891e+14 (4.37124e-12%)
+Backtracks: 9
+Parse time: 1.31ms
+Construction time: 359µs
+Preprocess time: 167µs
+Solve time: 181µs
+Total time: 2.02ms
+ 
+File: benchmarks/advanced/normalized-geom-30a-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 162
+AC3 time: 87µs
+UNSAT
+
+Explored: 40 of 1.15292e+18 (3.46945e-15%)
+Backtracks: 40
+Parse time: 1.33ms
+Construction time: 382µs
+Preprocess time: 87µs
+Solve time: 830µs
+Total time: 2.63ms
+ 
+File: benchmarks/advanced/normalized-geom-30a-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 162
+AC3 time: 91µs
+UNSAT
+
+Explored: 205 of 9.31323e+20 (2.20117e-17%)
+Backtracks: 205
+Parse time: 1.32ms
+Construction time: 416µs
+Preprocess time: 91µs
+Solve time: 4.92ms
+Total time: 6.74ms
+ 
+File: benchmarks/advanced/normalized-geom-30a-6-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 162
+AC3 time: 133µs
+SAT
+V0: 1, V1: 4, V2: 0, V3: 1, V4: 2, V5: 2, V6: 2, V7: 4, V8: 3, V9: 3, V10: 1, V11: 2, V12: 4, V13: 4, V14: 4, V15: 5, V16: 2, V17: 3, V18: 4, V19: 5, V20: 5, V21: 5, V22: 3, V23: 5, V24: 4, V25: 5, V26: 2, V27: 5, V28: 5, V29: 3
+
+Explored: 30 of 2.21074e+23 (1.35701e-20%)
+Backtracks: 0
+Parse time: 1.34ms
+Construction time: 403µs
+Preprocess time: 133µs
+Solve time: 859µs
+Total time: 2.73ms
+ 
+File: benchmarks/advanced/normalized-geom-40-2-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 57µs
+UNSAT
+
+Explored: 2 of 1.09951e+12 (1.81899e-10%)
+Backtracks: 2
+Parse time: 1.73ms
+Construction time: 311µs
+Preprocess time: 57µs
+Solve time: 17µs
+Total time: 2.11ms
+ 
+File: benchmarks/advanced/normalized-geom-40-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 75µs
+UNSAT
+
+Explored: 9 of 1.21577e+19 (7.40274e-17%)
+Backtracks: 9
+Parse time: 1.23ms
+Construction time: 331µs
+Preprocess time: 75µs
+Solve time: 84µs
+Total time: 1.72ms
+ 
+File: benchmarks/advanced/normalized-geom-40-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 183µs
+UNSAT
+
+Explored: 40 of 1.20893e+24 (3.30872e-21%)
+Backtracks: 40
+Parse time: 1.33ms
+Construction time: 327µs
+Preprocess time: 183µs
+Solve time: 318µs
+Total time: 2.15ms
+ 
+File: benchmarks/advanced/normalized-geom-40-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 120µs
+UNSAT
+
+Explored: 205 of 9.09495e+27 (2.254e-24%)
+Backtracks: 205
+Parse time: 1.65ms
+Construction time: 553µs
+Preprocess time: 120µs
+Solve time: 1.94ms
+Total time: 4.27ms
+ 
+File: benchmarks/advanced/normalized-geom-40-6-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 156
+AC3 time: 127µs
+SAT
+V0: 5, V1: 4, V2: 2, V3: 0, V4: 5, V5: 1, V6: 2, V7: 5, V8: 4, V9: 3, V10: 4, V11: 3, V12: 3, V13: 2, V14: 4, V15: 1, V16: 2, V17: 4, V18: 5, V19: 3, V20: 3, V21: 5, V22: 3, V23: 5, V24: 4, V25: 5, V26: 5, V27: 2, V28: 4, V29: 5, V30: 5, V31: 3, V32: 5, V33: 3, V34: 3, V35: 4, V36: 4, V37: 5, V38: 5, V39: 5
+
+Explored: 40 of 1.33675e+31 (2.99233e-28%)
+Backtracks: 0
+Parse time: 1.44ms
+Construction time: 358µs
+Preprocess time: 127µs
+Solve time: 834µs
+Total time: 2.76ms
+ 
+File: benchmarks/advanced/normalized-le-450-5a-2-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 11428
+AC3 time: 4.73ms
+UNSAT
+
+Explored: 2 of 2.90735e+135 (6.87911e-134%)
+Backtracks: 2
+Parse time: 1.70s
+Construction time: 66.70ms
+Preprocess time: 4.73ms
+Solve time: 1µs
+Total time: 1.77s
+ 
+File: benchmarks/advanced/normalized-le-450-5a-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 11428
+AC3 time: 6.49ms
+UNSAT
+
+Explored: 9 of 5.06483e+214 (1.77696e-212%)
+Backtracks: 9
+Parse time: 1.70s
+Construction time: 67.09ms
+Preprocess time: 6.49ms
+Solve time: 2.55ms
+Total time: 1.78s
+ 
+File: benchmarks/advanced/normalized-le-450-5a-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 11428
+AC3 time: 6.32ms
+UNSAT
+
+Explored: 40 of 8.45271e+270 (4.73221e-268%)
+Backtracks: 40
+Parse time: 1.70s
+Construction time: 67.61ms
+Preprocess time: 6.32ms
+Solve time: 12.25ms
+Total time: 1.79s
+ 
+File: benchmarks/advanced/normalized-le-450-5a-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 11428
+AC3 time: 7.50ms
+SAT
+V0: 1, V1: 4, V2: 3, V3: 2, V4: 2, V5: 1, V6: 4, V7: 3, V8: 0, V9: 0, V10: 1, V11: 4, V12: 3, V13: 0, V14: 2, V15: 1, V16: 4, V17: 3, V18: 0, V19: 0, V20: 1, V21: 4, V22: 3, V23: 0, V24: 2, V25: 1, V26: 4, V27: 3, V28: 0, V29: 2, V30: 1, V31: 4, V32: 3, V33: 0, V34: 0, V35: 1, V36: 4, V37: 3, V38: 0, V39: 2, V40: 1, V41: 4, V42: 3, V43: 0, V44: 0, V45: 1, V46: 4, V47: 3, V48: 0, V49: 2, V50: 1, V51: 4, V52: 3, V53: 0, V54: 2, V55: 1, V56: 4, V57: 3, V58: 0, V59: 2, V60: 1, V61: 4, V62: 3, V63: 0, V64: 2, V65: 1, V66: 4, V67: 3, V68: 0, V69: 2, V70: 1, V71: 4, V72: 3, V73: 0, V74: 2, V75: 1, V76: 4, V77: 3, V78: 0, V79: 2, V80: 1, V81: 4, V82: 3, V83: 2, V84: 2, V85: 1, V86: 4, V87: 3, V88: 2, V89: 2, V90: 1, V91: 4, V92: 3, V93: 2, V94: 2, V95: 1, V96: 4, V97: 3, V98: 0, V99: 0, V100: 1, V101: 4, V102: 3, V103: 0, V104: 2, V105: 1, V106: 4, V107: 3, V108: 2, V109: 0, V110: 1, V111: 4, V112: 3, V113: 2, V114: 2, V115: 1, V116: 4, V117: 3, V118: 2, V119: 2, V120: 1, V121: 4, V122: 3, V123: 0, V124: 0, V125: 1, V126: 4, V127: 3, V128: 0, V129: 2, V130: 1, V131: 4, V132: 3, V133: 0, V134: 0, V135: 1, V136: 4, V137: 3, V138: 0, V139: 2, V140: 1, V141: 4, V142: 3, V143: 0, V144: 2, V145: 1, V146: 4, V147: 3, V148: 0, V149: 2, V150: 1, V151: 4, V152: 3, V153: 0, V154: 2, V155: 1, V156: 4, V157: 3, V158: 0, V159: 2, V160: 1, V161: 4, V162: 3, V163: 0, V164: 2, V165: 1, V166: 4, V167: 3, V168: 0, V169: 2, V170: 1, V171: 4, V172: 3, V173: 0, V174: 2, V175: 1, V176: 4, V177: 3, V178: 0, V179: 2, V180: 1, V181: 4, V182: 3, V183: 0, V184: 2, V185: 1, V186: 4, V187: 3, V188: 0, V189: 0, V190: 1, V191: 4, V192: 3, V193: 0, V194: 2, V195: 1, V196: 4, V197: 3, V198: 2, V199: 0, V200: 1, V201: 4, V202: 3, V203: 2, V204: 2, V205: 1, V206: 4, V207: 3, V208: 0, V209: 2, V210: 1, V211: 4, V212: 3, V213: 0, V214: 0, V215: 1, V216: 4, V217: 3, V218: 0, V219: 2, V220: 1, V221: 4, V222: 3, V223: 2, V224: 0, V225: 1, V226: 4, V227: 3, V228: 2, V229: 2, V230: 1, V231: 4, V232: 3, V233: 0, V234: 2, V235: 1, V236: 4, V237: 3, V238: 0, V239: 2, V240: 1, V241: 4, V242: 3, V243: 0, V244: 2, V245: 1, V246: 4, V247: 3, V248: 0, V249: 2, V250: 1, V251: 4, V252: 3, V253: 0, V254: 2, V255: 1, V256: 4, V257: 3, V258: 0, V259: 2, V260: 1, V261: 4, V262: 3, V263: 0, V264: 2, V265: 1, V266: 4, V267: 3, V268: 0, V269: 2, V270: 1, V271: 4, V272: 3, V273: 0, V274: 2, V275: 1, V276: 4, V277: 3, V278: 0, V279: 0, V280: 1, V281: 4, V282: 3, V283: 0, V284: 2, V285: 1, V286: 4, V287: 3, V288: 0, V289: 0, V290: 1, V291: 4, V292: 3, V293: 0, V294: 2, V295: 1, V296: 4, V297: 3, V298: 0, V299: 2, V300: 1, V301: 4, V302: 3, V303: 0, V304: 0, V305: 1, V306: 4, V307: 3, V308: 2, V309: 2, V310: 1, V311: 4, V312: 3, V313: 2, V314: 0, V315: 1, V316: 4, V317: 3, V318: 2, V319: 2, V320: 1, V321: 4, V322: 3, V323: 0, V324: 2, V325: 1, V326: 4, V327: 3, V328: 0, V329: 2, V330: 1, V331: 4, V332: 3, V333: 2, V334: 2, V335: 1, V336: 4, V337: 3, V338: 2, V339: 2, V340: 1, V341: 4, V342: 3, V343: 2, V344: 2, V345: 1, V346: 4, V347: 3, V348: 0, V349: 2, V350: 1, V351: 4, V352: 3, V353: 0, V354: 2, V355: 1, V356: 4, V357: 3, V358: 0, V359: 2, V360: 1, V361: 4, V362: 3, V363: 0, V364: 2, V365: 1, V366: 4, V367: 3, V368: 0, V369: 0, V370: 1, V371: 4, V372: 3, V373: 0, V374: 2, V375: 1, V376: 4, V377: 3, V378: 0, V379: 0, V380: 1, V381: 4, V382: 3, V383: 0, V384: 2, V385: 1, V386: 4, V387: 3, V388: 0, V389: 2, V390: 1, V391: 4, V392: 3, V393: 0, V394: 0, V395: 1, V396: 4, V397: 3, V398: 0, V399: 2, V400: 1, V401: 4, V402: 3, V403: 0, V404: 0, V405: 1, V406: 4, V407: 3, V408: 0, V409: 2, V410: 1, V411: 4, V412: 3, V413: 0, V414: 2, V415: 1, V416: 4, V417: 3, V418: 0, V419: 2, V420: 1, V421: 4, V422: 3, V423: 2, V424: 2, V425: 1, V426: 4, V427: 3, V428: 2, V429: 2, V430: 1, V431: 4, V432: 3, V433: 0, V434: 2, V435: 1, V436: 4, V437: 3, V438: 0, V439: 2, V440: 1, V441: 4, V442: 3, V443: 0, V444: 2, V445: 1, V446: 4, V447: 3, V448: 2, V449: 2
+
+Explored: 20715 of inf (0%)
+Backtracks: 20265
+Parse time: 1.71s
+Construction time: 69.96ms
+Preprocess time: 7.50ms
+Solve time: 22.78s
+Total time: 24.57s
+ 
+File: benchmarks/advanced/normalized-myciel-5g-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 472
+AC3 time: 285µs
+UNSAT
+
+Explored: 141 of 2.65888e+22 (5.30298e-19%)
+Backtracks: 141
+Parse time: 5.18ms
+Construction time: 1.35ms
+Preprocess time: 285µs
+Solve time: 6.85ms
+Total time: 13.66ms
+ 
+File: benchmarks/advanced/normalized-myciel-5g-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 472
+AC3 time: 252µs
+UNSAT
+
+Explored: 97708 of 1.9807e+28 (4.93299e-22%)
+Backtracks: 97708
+Parse time: 4.76ms
+Construction time: 1.38ms
+Preprocess time: 252µs
+Solve time: 4.15s
+Total time: 4.15s
+ 
+File: benchmarks/advanced/normalized-myciel-5g-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 472
+AC3 time: 354µs
+INDETERMINATE
+
+Explored: 4.11936e+06 of 7.10543e+32 (5.79749e-25%)
+Backtracks: 4119364
+Parse time: 4.59ms
+Construction time: 1.45ms
+Preprocess time: 354µs
+Solve time: 2.50min
+Total time: 2.50min
+ 
+File: benchmarks/advanced/normalized-myciel-5g-6-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 472
+AC3 time: 386µs
+SAT
+V0: 5, V1: 3, V2: 2, V3: 2, V4: 5, V5: 1, V6: 3, V7: 4, V8: 4, V9: 3, V10: 5, V11: 1, V12: 3, V13: 4, V14: 4, V15: 3, V16: 4, V17: 4, V18: 4, V19: 4, V20: 4, V21: 2, V22: 5, V23: 5, V24: 3, V25: 2, V26: 2, V27: 5, V28: 1, V29: 3, V30: 1, V31: 0, V32: 3, V33: 5, V34: 1, V35: 3, V36: 2, V37: 2, V38: 3, V39: 1, V40: 3, V41: 2, V42: 3, V43: 3, V44: 2, V45: 5, V46: 4
+
+Explored: 47 of 3.74204e+36 (1.256e-33%)
+Backtracks: 0
+Parse time: 4.99ms
+Construction time: 1.43ms
+Preprocess time: 386µs
+Solve time: 1.34ms
+Total time: 8.14ms
+ 
+File: benchmarks/advanced/normalized-queens-5-5-3-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 320
+AC3 time: 184µs
+UNSAT
+
+Explored: 9 of 8.47289e+11 (1.06221e-09%)
+Backtracks: 9
+Parse time: 3.15ms
+Construction time: 1.04ms
+Preprocess time: 184µs
+Solve time: 593µs
+Total time: 4.96ms
+ 
+File: benchmarks/advanced/normalized-queens-5-5-4-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 320
+AC3 time: 227µs
+UNSAT
+
+Explored: 40 of 1.1259e+15 (3.55271e-12%)
+Backtracks: 40
+Parse time: 2.94ms
+Construction time: 1.03ms
+Preprocess time: 227µs
+Solve time: 3.33ms
+Total time: 7.53ms
+ 
+File: benchmarks/advanced/normalized-queens-5-5-5-ext.xml
+AC3: consistent (0 removed)
+AC3 iterations: 320
+AC3 time: 244µs
+SAT
+V0: 2, V1: 3, V2: 4, V3: 0, V4: 1, V5: 4, V6: 0, V7: 1, V8: 2, V9: 3, V10: 1, V11: 2, V12: 3, V13: 4, V14: 0, V15: 3, V16: 4, V17: 0, V18: 1, V19: 2, V20: 0, V21: 1, V22: 2, V23: 3, V24: 4
+
+Explored: 25 of 2.98023e+17 (8.38861e-15%)
+Backtracks: 0
+Parse time: 2.61ms
+Construction time: 1.54ms
+Preprocess time: 244µs
+Solve time: 810µs
+Total time: 5.20ms
+ 

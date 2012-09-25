@@ -1,0 +1,96 @@
+File: benchmarks/normal/hanoi-3.xml
+Variables: 6
+Constraints: 5
+AC3: consistent (106 removed)
+AC3 iterations: 18
+AC3 time: 51µs
+SAT (1)
+Explored: 6 of 2.12576e+06 (0.000282251%)
+Backtracks: 0
+Solve time: 179µs
+Total time: 230µs
+ 
+File: benchmarks/normal/hanoi-5.xml
+Variables: 30
+Constraints: 29
+AC3: consistent (6778 removed)
+AC3 iterations: 114
+AC3 time: 23.37ms
+SAT (1)
+Explored: 30 of 2.50631e+67 (1.19698e-64%)
+Backtracks: 0
+Solve time: 200µs
+Total time: 23.57ms
+ 
+File: benchmarks/normal/hanoi-7.xml
+Variables: 126
+Constraints: 125
+AC3: consistent (271066 removed)
+AC3 iterations: 498
+AC3 time: 8.67s
+SAT (1)
+Explored: 126 of inf (0%)
+Backtracks: 0
+Solve time: 2.01ms
+Total time: 8.67s
+ 
+File: benchmarks/normal/knights-10-5.xml
+Variables: 5
+Constraints: 10
+AC3: consistent (0 removed)
+AC3 iterations: 20
+AC3 time: 1.53ms
+UNSAT
+Explored: 100 of 1e+10 (1e-06%)
+Backtracks: 100
+Solve time: 36.73ms
+Total time: 38.25ms
+ 
+File: benchmarks/normal/knights-8-5.xml
+Variables: 5
+Constraints: 10
+AC3: consistent (0 removed)
+AC3 iterations: 20
+AC3 time: 640µs
+UNSAT
+Explored: 64 of 1.07374e+09 (5.96046e-06%)
+Backtracks: 64
+Solve time: 11.47ms
+Total time: 12.12ms
+ 
+File: benchmarks/normal/sudoku-1.xml
+Variables: 81
+Constraints: 697
+AC3: consistent (392 removed)
+AC3 iterations: 8842
+AC3 time: 2.62ms
+SAT (1)
+Explored: 81 of 5.72642e+46 (1.4145e-43%)
+Backtracks: 0
+Solve time: 2.93ms
+Total time: 5.55ms
+ 
+File: benchmarks/normal/sudoku-2.xml
+Variables: 81
+Constraints: 786
+AC3: consistent (257 removed)
+AC3 iterations: 6455
+AC3 time: 3.93ms
+SAT (1)
+Explored: 540 of 1.06112e+62 (5.08898e-58%)
+Backtracks: 459
+Solve time: 47.73ms
+Total time: 51.66ms
+ 
+File: benchmarks/normal/sudoku-3.xml
+Variables: 81
+Constraints: 697
+AC3: consistent (128 removed)
+AC3 iterations: 3769
+AC3 time: 2.85ms
+SAT (1)
+Explored: 81 of 1.79701e+57 (4.50749e-54%)
+Backtracks: 0
+Solve time: 3.80ms
+Total time: 6.65ms
+ 

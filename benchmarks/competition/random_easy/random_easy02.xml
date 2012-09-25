@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+<presentation name="15" maxConstraintArity="2" format="XCSP 2.0"/>
+<domains nbDomains="1">
+<domain name="D0" nbValues="10">0..9</domain>
+</domains>
+<variables nbVariables="11">
+<variable name="V1" domain="D0"/>
+<variable name="V10" domain="D0"/>
+<variable name="V11" domain="D0"/>
+<variable name="V12" domain="D0"/>
+<variable name="V15" domain="D0"/>
+<variable name="V3" domain="D0"/>
+<variable name="V5" domain="D0"/>
+<variable name="V6" domain="D0"/>
+<variable name="V7" domain="D0"/>
+<variable name="V8" domain="D0"/>
+<variable name="V9" domain="D0"/>
+</variables>
+<relations nbRelations="1">
+<relation name="R1" arity="2" nbTuples="7" semantics="supports">0 8 |2 3 |2 9 |5 4 |5 5 |6 8 |8 3</relation>
+</relations>
+<constraints nbConstraints="8">
+<constraint name="C8" arity="2" scope="V12 V9" reference="R1"/>
+<constraint name="C3" arity="2" scope="V1 V8" reference="R1"/>
+<constraint name="C2" arity="2" scope="V1 V5" reference="R1"/>
+<constraint name="C1" arity="2" scope="V3 V10" reference="R1"/>
+<constraint name="C7" arity="2" scope="V5 V11" reference="R1"/>
+<constraint name="C6" arity="2" scope="V12 V5" reference="R1"/>
+<constraint name="C5" arity="2" scope="V6 V8" reference="R1"/>
+<constraint name="C4" arity="2" scope="V7 V15" reference="R1"/>
+</constraints>
+</instance>

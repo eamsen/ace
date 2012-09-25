@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<instance>
+<presentation name="trivial-unsat" maxConstraintArity="2" format="XCSP 2.0"/>
+	<domains nbDomains="1">
+		<domain name="D0" nbValues="2">1..2</domain>
+	</domains>
+	<variables nbVariables="2">
+		<variable name="v1" domain="D0"/>
+		<variable name="v2" domain="D0"/>
+	</variables>
+	<relations nbRelations="2">
+		<relation name="eq" arity="2" nbTuples="2" semantics="supports">1 1 | 2 2</relation>
+		<relation name="neq" arity="2" nbTuples="2" semantics="conflicts">1 1 | 2 2</relation>
+	</relations>
+	<constraints nbConstraints="2">
+		<constraint name="ceq" arity="2" scope="v1 v2" reference="eq"/>
+		<constraint name="cneq" arity="2" scope="v2 v1" reference="neq"/>
+	</constraints>
+</instance> 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<instance>
+<presentation name="4queens" maxConstraintArity="2" format="XCSP 2.0"/>
+	<domains nbDomains="1">
+		<domain name="D0" nbValues="1">1</domain>
+	</domains>
+	<variables nbVariables="4">
+		<variable name="c1" domain="D0"/>
+		<variable name="c2" domain="D0"/>
+		<variable name="c3" domain="D0"/>
+		<variable name="c4" domain="D0"/>
+	</variables>
+	<relations nbRelations="1">
+		<relation name="e1" arity="4" nbTuples="1" semantics="supports">1 1 1 1</relation>
+	</relations>
+	<constraints nbConstraints="1">
+		<constraint name="trivial" arity="4" scope="c1 c2 c3 c4" reference="e1"/>
+	</constraints>
+</instance> 

@@ -1,0 +1,110 @@
+File: benchmarks/normal/hanoi-3.xml
+AC3: consistent (106 removed)
+AC3 iterations: 18
+AC3 time: 32µs
+SAT
+
+Explored: 6 of 2.12576e+06 (0.000282251%)
+Backtracks: 0
+Parse time: 485µs
+Construction time: 135µs
+Preprocess time: 32µs
+Solve time: 75µs
+Total time: 727µs
+ 
+File: benchmarks/normal/hanoi-5.xml
+AC3: consistent (6778 removed)
+AC3 iterations: 114
+AC3 time: 3.23ms
+SAT
+
+Explored: 30 of 2.50631e+67 (1.19698e-64%)
+Backtracks: 0
+Parse time: 2.19ms
+Construction time: 3.09ms
+Preprocess time: 3.23ms
+Solve time: 230µs
+Total time: 8.74ms
+ 
+File: benchmarks/normal/hanoi-7.xml
+AC3: consistent (271066 removed)
+AC3 iterations: 498
+AC3 time: 1.07s
+SAT
+
+Explored: 126 of inf (0%)
+Backtracks: 0
+Parse time: 18.88ms
+Construction time: 286.44ms
+Preprocess time: 1.07s
+Solve time: 3.25ms
+Total time: 1.38s
+ 
+File: benchmarks/normal/knights-10-5.xml
+AC3: consistent (0 removed)
+AC3 iterations: 20
+AC3 time: 232µs
+UNSAT
+Explored: 100 of 1e+10 (1e-06%)
+Backtracks: 100
+Parse time: 1.65ms
+Construction time: 1.22ms
+Preprocess time: 232µs
+Solve time: 10.19ms
+Total time: 13.29ms
+ 
+File: benchmarks/normal/knights-8-5.xml
+AC3: consistent (0 removed)
+AC3 iterations: 20
+AC3 time: 112µs
+UNSAT
+Explored: 64 of 1.07374e+09 (5.96046e-06%)
+Backtracks: 64
+Parse time: 1.13ms
+Construction time: 591µs
+Preprocess time: 112µs
+Solve time: 3.95ms
+Total time: 5.78ms
+ 
+File: benchmarks/normal/sudoku-1.xml
+AC3: consistent (392 removed)
+AC3 iterations: 8842
+AC3 time: 3.62ms
+SAT
+
+Explored: 81 of 5.72642e+46 (1.4145e-43%)
+Backtracks: 0
+Parse time: 36.01ms
+Construction time: 5.05ms
+Preprocess time: 3.62ms
+Solve time: 2.10ms
+Total time: 46.78ms
+ 
+File: benchmarks/normal/sudoku-2.xml
+AC3: consistent (257 removed)
+AC3 iterations: 6455
+AC3 time: 5.02ms
+SAT
+
+Explored: 540 of 1.06112e+62 (5.08898e-58%)
+Backtracks: 459
+Parse time: 41.44ms
+Construction time: 6.59ms
+Preprocess time: 5.02ms
+Solve time: 58.12ms
+Total time: 111.17ms
+ 
+File: benchmarks/normal/sudoku-3.xml
+AC3: consistent (128 removed)
+AC3 iterations: 3769
+AC3 time: 3.10ms
+SAT
+
+Explored: 81 of 1.79701e+57 (4.50749e-54%)
+Backtracks: 0
+Parse time: 34.36ms
+Construction time: 6.24ms
+Preprocess time: 3.10ms
+Solve time: 3.77ms
+Total time: 47.47ms
+ 

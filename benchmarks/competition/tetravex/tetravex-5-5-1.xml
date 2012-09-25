@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<instance>
+<presentation name="tetravex" maxConstraintArity="2" format="XCSP 2.0"/>
+
+<domains nbDomains="1">
+<domain name="D0" nbValues="25">1..25</domain>
+</domains>
+
+<variables nbVariables="25">
+<variable name="V0" domain="D0"/>
+<variable name="V1" domain="D0"/>
+<variable name="V2" domain="D0"/>
+<variable name="V3" domain="D0"/>
+<variable name="V4" domain="D0"/>
+<variable name="V5" domain="D0"/>
+<variable name="V6" domain="D0"/>
+<variable name="V7" domain="D0"/>
+<variable name="V8" domain="D0"/>
+<variable name="V9" domain="D0"/>
+<variable name="V10" domain="D0"/>
+<variable name="V11" domain="D0"/>
+<variable name="V12" domain="D0"/>
+<variable name="V13" domain="D0"/>
+<variable name="V14" domain="D0"/>
+<variable name="V15" domain="D0"/>
+<variable name="V16" domain="D0"/>
+<variable name="V17" domain="D0"/>
+<variable name="V18" domain="D0"/>
+<variable name="V19" domain="D0"/>
+<variable name="V20" domain="D0"/>
+<variable name="V21" domain="D0"/>
+<variable name="V22" domain="D0"/>
+<variable name="V23" domain="D0"/>
+<variable name="V24" domain="D0"/>
+</variables>
+
+<relations nbRelations="3">
+<relation name="neq" arity="2" nbTuples="25" semantics="conflicts">1 1|2 2|3 3|4 4|5 5|6 6|7 7|8 8|9 9|10 10|11 11|12 12|13 13|14 14|15 15|16 16|17 17|18 18|19 19|20 20|21 21|22 22|23 23|24 24|25 25</relation>
+<relation name="hor_match" arity="2" nbTuples="135" semantics="supports">1 1|1 6|1 8|1 9|1 11|1 25|2 5|2 7|2 23|3 1|3 6|3 8|3 9|3 11|3 25|4 1|4 6|4 8|4 9|4 11|4 25|5 2|5 10|5 12|5 15|5 17|5 20|5 22|5 24|6 1|6 6|6 8|6 9|6 11|6 25|7 2|7 10|7 12|7 15|7 17|7 20|7 22|7 24|8 3|8 13|8 16|8 18|8 21|9 4|9 14|9 19|10 2|10 10|10 12|10 15|10 17|10 20|10 22|10 24|11 3|11 13|11 16|11 18|11 21|12 2|12 10|12 12|12 15|12 17|12 20|12 22|12 24|13 3|13 13|13 16|13 18|13 21|14 4|14 14|14 19|15 2|15 10|15 12|15 15|15 17|15 20|15 22|15 24|16 3|16 13|16 16|16 18|16 21|17 2|17 10|17 12|17 15|17 17|17 20|17 22|17 24|18 5|18 7|18 23|19 2|19 10|19 12|19 15|19 17|19 20|19 22|19 24|20 1|20 6|20 8|20 9|20 11|20 25|21 4|21 14|21 19|22 4|22 14|22 19|23 3|23 13|23 16|23 18|23 21|24 5|24 7|24 23|25 5|25 7|25 23</relation>
+<relation name="vert_match" arity="2" nbTuples="178" semantics="supports">1 2|1 3|1 11|1 12|1 16|1 25|2 2|2 3|2 11|2 12|2 16|2 25|3 4|3 6|3 9|3 13|3 14|3 15|3 19|3 20|3 21|3 22|3 23|4 5|4 7|4 8|4 10|5 2|5 3|5 11|5 12|5 16|5 25|6 5|6 7|6 8|6 10|7 5|7 7|7 8|7 10|8 4|8 6|8 9|8 13|8 14|8 15|8 19|8 20|8 21|8 22|8 23|9 5|9 7|9 8|9 10|10 2|10 3|10 11|10 12|10 16|10 25|11 2|11 3|11 11|11 12|11 16|11 25|12 4|12 6|12 9|12 13|12 14|12 15|12 19|12 20|12 21|12 22|12 23|13 4|13 6|13 9|13 13|13 14|13 15|13 19|13 20|13 21|13 22|13 23|14 4|14 6|14 9|14 13|14 14|14 15|14 19|14 20|14 21|14 22|14 23|15 4|15 6|15 9|15 13|15 14|15 15|15 19|15 20|15 21|15 22|15 23|16 1|16 17|17 18|17 24|18 4|18 6|18 9|18 13|18 14|18 15|18 19|18 20|18 21|18 22|18 23|19 4|19 6|19 9|19 13|19 14|19 15|19 19|19 20|19 21|19 22|19 23|20 2|20 3|20 11|20 12|20 16|20 25|21 4|21 6|21 9|21 13|21 14|21 15|21 19|21 20|21 21|21 22|21 23|22 4|22 6|22 9|22 13|22 14|22 15|22 19|22 20|22 21|22 22|22 23|23 18|23 24|24 2|24 3|24 11|24 12|24 16|24 25|25 5|25 7|25 8|25 10</relation>
+</relations>
+
+<constraints nbConstraints="340">
+<constraint name="C0" arity="2" scope="V17 V22" reference="neq"/>
+<constraint name="C1" arity="2" scope="V8 V1" reference="neq"/>
+<constraint name="C2" arity="2" scope="V7 V22" reference="neq"/>
+<constraint name="C3" arity="2" scope="V16 V20" reference="neq"/>
+<constraint name="C4" arity="2" scope="V4 V10" reference="neq"/>
+<constraint name="C5" arity="2" scope="V12 V24" reference="neq"/>
+<constraint name="C6" arity="2" scope="V8 V2" reference="neq"/>
+<constraint name="C7" arity="2" scope="V14 V20" reference="neq"/>
+<constraint name="C8" arity="2" scope="V16 V14" reference="neq"/>
+<constraint name="C9" arity="2" scope="V4 V13" reference="neq"/>
+<constraint name="C10" arity="2" scope="V3 V11" reference="neq"/>
+<constraint name="C11" arity="2" scope="V4 V1" reference="neq"/>
+<constraint name="C12" arity="2" scope="V7 V17" reference="neq"/>
+<constraint name="C13" arity="2" scope="V12 V5" reference="vert_match"/>
+<constraint name="C14" arity="2" scope="V24 V10" reference="neq"/>
+<constraint name="C15" arity="2" scope="V21 V16" reference="neq"/>
+<constraint name="C16" arity="2" scope="V2 V22" reference="neq"/>
+<constraint name="C17" arity="2" scope="V3 V0" reference="neq"/>
+<constraint name="C18" arity="2" scope="V11 V17" reference="neq"/>
+<constraint name="C19" arity="2" scope="V9 V19" reference="neq"/>
+<constraint name="C20" arity="2" scope="V9 V15" reference="neq"/>
+<constraint name="C21" arity="2" scope="V10 V13" reference="neq"/>
+<constraint name="C22" arity="2" scope="V1 V0" reference="neq"/>
+<constraint name="C23" arity="2" scope="V24 V0" reference="neq"/>
+<constraint name="C24" arity="2" scope="V23 V10" reference="neq"/>
+<constraint name="C25" arity="2" scope="V7 V15" reference="neq"/>
+<constraint name="C26" arity="2" scope="V10 V16" reference="neq"/>
+<constraint name="C27" arity="2" scope="V0 V19" reference="neq"/>
+<constraint name="C28" arity="2" scope="V4 V3" reference="vert_match"/>
+<constraint name="C29" arity="2" scope="V9 V4" reference="neq"/>
+<constraint name="C30" arity="2" scope="V23 V13" reference="neq"/>
+<constraint name="C31" arity="2" scope="V18 V14" reference="neq"/>
+<constraint name="C32" arity="2" scope="V23 V17" reference="neq"/>
+<constraint name="C33" arity="2" scope="V11 V16" reference="neq"/>
+<constraint name="C34" arity="2" scope="V18 V2" reference="neq"/>
+<constraint name="C35" arity="2" scope="V12 V19" reference="neq"/>
+<constraint name="C36" arity="2" scope="V3 V2" reference="neq"/>
+<constraint name="C37" arity="2" scope="V0 V14" reference="neq"/>
+<constraint name="C38" arity="2" scope="V4 V7" reference="neq"/>
+<constraint name="C39" arity="2" scope="V9 V1" reference="neq"/>
+<constraint name="C40" arity="2" scope="V21 V8" reference="neq"/>
+<constraint name="C41" arity="2" scope="V16 V19" reference="neq"/>
+<constraint name="C42" arity="2" scope="V1 V0" reference="hor_match"/>
+<constraint name="C43" arity="2" scope="V11 V6" reference="vert_match"/>
+<constraint name="C44" arity="2" scope="V23 V15" reference="neq"/>
+<constraint name="C45" arity="2" scope="V0 V16" reference="hor_match"/>
+<constraint name="C46" arity="2" scope="V17 V20" reference="neq"/>
+<constraint name="C47" arity="2" scope="V6 V16" reference="neq"/>
+<constraint name="C48" arity="2" scope="V9 V16" reference="neq"/>
+<constraint name="C49" arity="2" scope="V5 V24" reference="neq"/>
+<constraint name="C50" arity="2" scope="V3 V15" reference="neq"/>
+<constraint name="C51" arity="2" scope="V23 V4" reference="neq"/>
+<constraint name="C52" arity="2" scope="V1 V19" reference="neq"/>
+<constraint name="C53" arity="2" scope="V18 V13" reference="neq"/>
+<constraint name="C54" arity="2" scope="V24 V4" reference="neq"/>
+<constraint name="C55" arity="2" scope="V7 V17" reference="hor_match"/>
+<constraint name="C56" arity="2" scope="V8 V17" reference="neq"/>
+<constraint name="C57" arity="2" scope="V7 V11" reference="neq"/>
+<constraint name="C58" arity="2" scope="V3 V16" reference="neq"/>
+<constraint name="C59" arity="2" scope="V24 V3" reference="neq"/>
+<constraint name="C60" arity="2" scope="V7 V18" reference="neq"/>
+<constraint name="C61" arity="2" scope="V8 V6" reference="neq"/>
+<constraint name="C62" arity="2" scope="V21 V18" reference="neq"/>
+<constraint name="C63" arity="2" scope="V4 V22" reference="neq"/>
+<constraint name="C64" arity="2" scope="V3 V6" reference="hor_match"/>
+<constraint name="C65" arity="2" scope="V0 V22" reference="neq"/>
+<constraint name="C66" arity="2" scope="V12 V0" reference="neq"/>
+<constraint name="C67" arity="2" scope="V7 V13" reference="neq"/>
+<constraint name="C68" arity="2" scope="V24 V11" reference="neq"/>
+<constraint name="C69" arity="2" scope="V4 V2" reference="neq"/>
+<constraint name="C70" arity="2" scope="V5 V8" reference="neq"/>
+<constraint name="C71" arity="2" scope="V10 V14" reference="neq"/>
+<constraint name="C72" arity="2" scope="V2 V14" reference="hor_match"/>
+<constraint name="C73" arity="2" scope="V24 V18" reference="neq"/>
+<constraint name="C74" arity="2" scope="V2 V13" reference="vert_match"/>
+<constraint name="C75" arity="2" scope="V23 V22" reference="neq"/>
+<constraint name="C76" arity="2" scope="V1 V6" reference="neq"/>
+<constraint name="C77" arity="2" scope="V6 V2" reference="neq"/>
+<constraint name="C78" arity="2" scope="V12 V15" reference="neq"/>
+<constraint name="C79" arity="2" scope="V17 V2" reference="neq"/>
+<constraint name="C80" arity="2" scope="V21 V17" reference="neq"/>
+<constraint name="C81" arity="2" scope="V3 V20" reference="neq"/>
+<constraint name="C82" arity="2" scope="V9 V2" reference="neq"/>
+<constraint name="C83" arity="2" scope="V7 V11" reference="vert_match"/>
+<constraint name="C84" arity="2" scope="V12 V9" reference="neq"/>
+<constraint name="C85" arity="2" scope="V12 V3" reference="neq"/>
+<constraint name="C86" arity="2" scope="V10 V18" reference="neq"/>
+<constraint name="C87" arity="2" scope="V21 V8" reference="hor_match"/>
+<constraint name="C88" arity="2" scope="V15 V19" reference="neq"/>
+<constraint name="C89" arity="2" scope="V24 V19" reference="neq"/>
+<constraint name="C90" arity="2" scope="V15 V2" reference="neq"/>
+<constraint name="C91" arity="2" scope="V1 V16" reference="neq"/>
+<constraint name="C92" arity="2" scope="V21 V7" reference="neq"/>
+<constraint name="C93" arity="2" scope="V19 V20" reference="neq"/>
+<constraint name="C94" arity="2" scope="V5 V14" reference="neq"/>
+<constraint name="C95" arity="2" scope="V12 V9" reference="hor_match"/>
+<constraint name="C96" arity="2" scope="V21 V0" reference="neq"/>
+<constraint name="C97" arity="2" scope="V11 V13" reference="neq"/>
+<constraint name="C98" arity="2" scope="V0 V15" reference="neq"/>
+<constraint name="C99" arity="2" scope="V17 V19" reference="hor_match"/>
+<constraint name="C100" arity="2" scope="V3 V22" reference="neq"/>
+<constraint name="C101" arity="2" scope="V4 V15" reference="neq"/>
+<constraint name="C102" arity="2" scope="V1 V20" reference="neq"/>
+<constraint name="C103" arity="2" scope="V1 V17" reference="neq"/>
+<constraint name="C104" arity="2" scope="V24 V17" reference="neq"/>
+<constraint name="C105" arity="2" scope="V15 V14" reference="neq"/>
+<constraint name="C106" arity="2" scope="V24 V16" reference="neq"/>
+<constraint name="C107" arity="2" scope="V8 V11" reference="neq"/>
+<constraint name="C108" arity="2" scope="V8 V4" reference="neq"/>
+<constraint name="C109" arity="2" scope="V9 V0" reference="neq"/>
+<constraint name="C110" arity="2" scope="V12 V5" reference="neq"/>
+<constraint name="C111" arity="2" scope="V21 V15" reference="neq"/>
+<constraint name="C112" arity="2" scope="V6 V19" reference="neq"/>
+<constraint name="C113" arity="2" scope="V23 V24" reference="vert_match"/>
+<constraint name="C114" arity="2" scope="V5 V9" reference="neq"/>
+<constraint name="C115" arity="2" scope="V23 V24" reference="neq"/>
+<constraint name="C116" arity="2" scope="V17 V16" reference="neq"/>
+<constraint name="C117" arity="2" scope="V21 V4" reference="neq"/>
+<constraint name="C118" arity="2" scope="V2 V16" reference="neq"/>
+<constraint name="C119" arity="2" scope="V24 V6" reference="neq"/>
+<constraint name="C120" arity="2" scope="V21 V2" reference="neq"/>
+<constraint name="C121" arity="2" scope="V5 V11" reference="neq"/>
+<constraint name="C122" arity="2" scope="V24 V10" reference="hor_match"/>
+<constraint name="C123" arity="2" scope="V21 V11" reference="neq"/>
+<constraint name="C124" arity="2" scope="V0 V17" reference="neq"/>
+<constraint name="C125" arity="2" scope="V21 V22" reference="neq"/>
+<constraint name="C126" arity="2" scope="V9 V7" reference="hor_match"/>
+<constraint name="C127" arity="2" scope="V6 V2" reference="hor_match"/>
+<constraint name="C128" arity="2" scope="V10 V22" reference="neq"/>
+<constraint name="C129" arity="2" scope="V7 V14" reference="neq"/>
+<constraint name="C130" arity="2" scope="V13 V19" reference="neq"/>
+<constraint name="C131" arity="2" scope="V21 V12" reference="neq"/>
+<constraint name="C132" arity="2" scope="V5 V17" reference="neq"/>
+<constraint name="C133" arity="2" scope="V3 V7" reference="neq"/>
+<constraint name="C134" arity="2" scope="V9 V7" reference="neq"/>
+<constraint name="C135" arity="2" scope="V23 V14" reference="neq"/>
+<constraint name="C136" arity="2" scope="V5 V10" reference="neq"/>
+<constraint name="C137" arity="2" scope="V8 V10" reference="neq"/>
+<constraint name="C138" arity="2" scope="V10 V6" reference="neq"/>
+<constraint name="C139" arity="2" scope="V21 V14" reference="neq"/>
+<constraint name="C140" arity="2" scope="V24 V22" reference="neq"/>
+<constraint name="C141" arity="2" scope="V5 V6" reference="neq"/>
+<constraint name="C142" arity="2" scope="V11 V18" reference="neq"/>
+<constraint name="C143" arity="2" scope="V12 V8" reference="neq"/>
+<constraint name="C144" arity="2" scope="V9 V17" reference="neq"/>
+<constraint name="C145" arity="2" scope="V13 V22" reference="neq"/>
+<constraint name="C146" arity="2" scope="V18 V0" reference="neq"/>
+<constraint name="C147" arity="2" scope="V12 V18" reference="neq"/>
+<constraint name="C148" arity="2" scope="V15 V16" reference="neq"/>
+<constraint name="C149" arity="2" scope="V1 V2" reference="neq"/>
+<constraint name="C150" arity="2" scope="V19 V14" reference="neq"/>
+<constraint name="C151" arity="2" scope="V8 V13" reference="neq"/>
+<constraint name="C152" arity="2" scope="V1 V22" reference="neq"/>
+<constraint name="C153" arity="2" scope="V10 V2" reference="neq"/>
+<constraint name="C154" arity="2" scope="V8 V0" reference="neq"/>
+<constraint name="C155" arity="2" scope="V21 V19" reference="neq"/>
+<constraint name="C156" arity="2" scope="V4 V20" reference="neq"/>
+<constraint name="C157" arity="2" scope="V12 V2" reference="neq"/>
+<constraint name="C158" arity="2" scope="V24 V2" reference="neq"/>
+<constraint name="C159" arity="2" scope="V13 V14" reference="neq"/>
+<constraint name="C160" arity="2" scope="V3 V14" reference="neq"/>
+<constraint name="C161" arity="2" scope="V5 V18" reference="neq"/>
+<constraint name="C162" arity="2" scope="V12 V13" reference="neq"/>
+<constraint name="C163" arity="2" scope="V1 V13" reference="neq"/>
+<constraint name="C164" arity="2" scope="V11 V15" reference="hor_match"/>
+<constraint name="C165" arity="2" scope="V22 V14" reference="neq"/>
+<constraint name="C166" arity="2" scope="V13 V16" reference="neq"/>
+<constraint name="C167" arity="2" scope="V9 V20" reference="neq"/>
+<constraint name="C168" arity="2" scope="V23 V2" reference="neq"/>
+<constraint name="C169" arity="2" scope="V5 V0" reference="neq"/>
+<constraint name="C170" arity="2" scope="V5 V7" reference="neq"/>
+<constraint name="C171" arity="2" scope="V0 V20" reference="neq"/>
+<constraint name="C172" arity="2" scope="V17 V19" reference="neq"/>
+<constraint name="C173" arity="2" scope="V12 V17" reference="neq"/>
+<constraint name="C174" arity="2" scope="V8 V22" reference="neq"/>
+<constraint name="C175" arity="2" scope="V14 V20" reference="vert_match"/>
+<constraint name="C176" arity="2" scope="V5 V1" reference="neq"/>
+<constraint name="C177" arity="2" scope="V1 V11" reference="neq"/>
+<constraint name="C178" arity="2" scope="V6 V0" reference="neq"/>
+<constraint name="C179" arity="2" scope="V8 V9" reference="vert_match"/>
+<constraint name="C180" arity="2" scope="V10 V18" reference="hor_match"/>
+<constraint name="C181" arity="2" scope="V17 V13" reference="neq"/>
+<constraint name="C182" arity="2" scope="V4 V18" reference="neq"/>
+<constraint name="C183" arity="2" scope="V21 V5" reference="neq"/>
+<constraint name="C184" arity="2" scope="V22 V14" reference="vert_match"/>
+<constraint name="C185" arity="2" scope="V8 V18" reference="neq"/>
+<constraint name="C186" arity="2" scope="V5 V3" reference="neq"/>
+<constraint name="C187" arity="2" scope="V23 V11" reference="neq"/>
+<constraint name="C188" arity="2" scope="V1 V7" reference="neq"/>
+<constraint name="C189" arity="2" scope="V23 V18" reference="neq"/>
+<constraint name="C190" arity="2" scope="V12 V11" reference="neq"/>
+<constraint name="C191" arity="2" scope="V5 V23" reference="neq"/>
+<constraint name="C192" arity="2" scope="V21 V12" reference="vert_match"/>
+<constraint name="C193" arity="2" scope="V12 V22" reference="neq"/>
+<constraint name="C194" arity="2" scope="V4 V17" reference="neq"/>
+<constraint name="C195" arity="2" scope="V8 V3" reference="neq"/>
+<constraint name="C196" arity="2" scope="V5 V15" reference="neq"/>
+<constraint name="C197" arity="2" scope="V21 V23" reference="neq"/>
+<constraint name="C198" arity="2" scope="V24 V15" reference="neq"/>
+<constraint name="C199" arity="2" scope="V0 V13" reference="neq"/>
+<constraint name="C200" arity="2" scope="V23 V1" reference="neq"/>
+<constraint name="C201" arity="2" scope="V21 V20" reference="neq"/>
+<constraint name="C202" arity="2" scope="V6 V20" reference="neq"/>
+<constraint name="C203" arity="2" scope="V15 V20" reference="neq"/>
+<constraint name="C204" arity="2" scope="V6 V18" reference="vert_match"/>
+<constraint name="C205" arity="2" scope="V7 V6" reference="neq"/>
+<constraint name="C206" arity="2" scope="V7 V16" reference="neq"/>
+<constraint name="C207" arity="2" scope="V11 V6" reference="neq"/>
+<constraint name="C208" arity="2" scope="V12 V10" reference="neq"/>
+<constraint name="C209" arity="2" scope="V3 V10" reference="vert_match"/>
+<constraint name="C210" arity="2" scope="V5 V2" reference="neq"/>
+<constraint name="C211" arity="2" scope="V9 V18" reference="neq"/>
+<constraint name="C212" arity="2" scope="V4 V6" reference="neq"/>
+<constraint name="C213" arity="2" scope="V4 V11" reference="hor_match"/>
+<constraint name="C214" arity="2" scope="V10 V0" reference="neq"/>
+<constraint name="C215" arity="2" scope="V11 V19" reference="neq"/>
+<constraint name="C216" arity="2" scope="V4 V0" reference="neq"/>
+<constraint name="C217" arity="2" scope="V9 V22" reference="neq"/>
+<constraint name="C218" arity="2" scope="V1 V18" reference="neq"/>
+<constraint name="C219" arity="2" scope="V18 V13" reference="hor_match"/>
+<constraint name="C220" arity="2" scope="V12 V1" reference="neq"/>
+<constraint name="C221" arity="2" scope="V23 V7" reference="neq"/>
+<constraint name="C222" arity="2" scope="V11 V22" reference="neq"/>
+<constraint name="C223" arity="2" scope="V3 V10" reference="neq"/>
+<constraint name="C224" arity="2" scope="V21 V24" reference="neq"/>
+<constraint name="C225" arity="2" scope="V10 V11" reference="neq"/>
+<constraint name="C226" arity="2" scope="V6 V22" reference="neq"/>
+<constraint name="C227" arity="2" scope="V0 V2" reference="neq"/>
+<constraint name="C228" arity="2" scope="V15 V22" reference="hor_match"/>
+<constraint name="C229" arity="2" scope="V21 V13" reference="neq"/>
+<constraint name="C230" arity="2" scope="V18 V17" reference="neq"/>
+<constraint name="C231" arity="2" scope="V11 V20" reference="neq"/>
+<constraint name="C232" arity="2" scope="V18 V15" reference="neq"/>
+<constraint name="C233" arity="2" scope="V2 V20" reference="neq"/>
+<constraint name="C234" arity="2" scope="V9 V10" reference="neq"/>
+<constraint name="C235" arity="2" scope="V24 V1" reference="neq"/>
+<constraint name="C236" arity="2" scope="V2 V19" reference="neq"/>
+<constraint name="C237" arity="2" scope="V4 V3" reference="neq"/>
+<constraint name="C238" arity="2" scope="V5 V4" reference="hor_match"/>
+<constraint name="C239" arity="2" scope="V16 V22" reference="neq"/>
+<constraint name="C240" arity="2" scope="V10 V17" reference="neq"/>
+<constraint name="C241" arity="2" scope="V23 V0" reference="neq"/>
+<constraint name="C242" arity="2" scope="V4 V19" reference="neq"/>
+<constraint name="C243" arity="2" scope="V12 V6" reference="neq"/>
+<constraint name="C244" arity="2" scope="V3 V1" reference="neq"/>
+<constraint name="C245" arity="2" scope="V15 V22" reference="neq"/>
+<constraint name="C246" arity="2" scope="V7 V19" reference="neq"/>
+<constraint name="C247" arity="2" scope="V5 V20" reference="neq"/>
+<constraint name="C248" arity="2" scope="V9 V6" reference="neq"/>
+<constraint name="C249" arity="2" scope="V0 V16" reference="neq"/>
+<constraint name="C250" arity="2" scope="V10 V19" reference="neq"/>
+<constraint name="C251" arity="2" scope="V11 V0" reference="neq"/>
+<constraint name="C252" arity="2" scope="V12 V20" reference="neq"/>
+<constraint name="C253" arity="2" scope="V17 V14" reference="neq"/>
+<constraint name="C254" arity="2" scope="V4 V11" reference="neq"/>
+<constraint name="C255" arity="2" scope="V23 V16" reference="neq"/>
+<constraint name="C256" arity="2" scope="V1 V7" reference="vert_match"/>
+<constraint name="C257" arity="2" scope="V17 V15" reference="vert_match"/>
+<constraint name="C258" arity="2" scope="V12 V23" reference="neq"/>
+<constraint name="C259" arity="2" scope="V12 V14" reference="neq"/>
+<constraint name="C260" arity="2" scope="V21 V3" reference="neq"/>
+<constraint name="C261" arity="2" scope="V6 V14" reference="neq"/>
+<constraint name="C262" arity="2" scope="V12 V4" reference="neq"/>
+<constraint name="C263" arity="2" scope="V11 V14" reference="neq"/>
+<constraint name="C264" arity="2" scope="V7 V0" reference="neq"/>
+<constraint name="C265" arity="2" scope="V1 V15" reference="neq"/>
+<constraint name="C266" arity="2" scope="V5 V22" reference="neq"/>
+<constraint name="C267" arity="2" scope="V5 V19" reference="neq"/>
+<constraint name="C268" arity="2" scope="V12 V7" reference="neq"/>
+<constraint name="C269" arity="2" scope="V6 V13" reference="neq"/>
+<constraint name="C270" arity="2" scope="V8 V19" reference="neq"/>
+<constraint name="C271" arity="2" scope="V24 V13" reference="neq"/>
+<constraint name="C272" arity="2" scope="V10 V20" reference="neq"/>
+<constraint name="C273" arity="2" scope="V24 V7" reference="neq"/>
+<constraint name="C274" arity="2" scope="V18 V20" reference="neq"/>
+<constraint name="C275" arity="2" scope="V8 V20" reference="neq"/>
+<constraint name="C276" arity="2" scope="V10 V15" reference="neq"/>
+<constraint name="C277" arity="2" scope="V9 V3" reference="neq"/>
+<constraint name="C278" arity="2" scope="V3 V19" reference="neq"/>
+<constraint name="C279" arity="2" scope="V18 V22" reference="neq"/>
+<constraint name="C280" arity="2" scope="V4 V16" reference="neq"/>
+<constraint name="C281" arity="2" scope="V9 V11" reference="neq"/>
+<constraint name="C282" arity="2" scope="V5 V4" reference="neq"/>
+<constraint name="C283" arity="2" scope="V17 V15" reference="neq"/>
+<constraint name="C284" arity="2" scope="V4 V14" reference="neq"/>
+<constraint name="C285" arity="2" scope="V23 V20" reference="neq"/>
+<constraint name="C286" arity="2" scope="V3 V13" reference="neq"/>
+<constraint name="C287" arity="2" scope="V24 V8" reference="neq"/>
+<constraint name="C288" arity="2" scope="V18 V19" reference="neq"/>
+<constraint name="C289" arity="2" scope="V8 V9" reference="neq"/>
+<constraint name="C290" arity="2" scope="V23 V19" reference="neq"/>
+<constraint name="C291" arity="2" scope="V9 V13" reference="neq"/>
+<constraint name="C292" arity="2" scope="V24 V14" reference="neq"/>
+<constraint name="C293" arity="2" scope="V6 V15" reference="neq"/>
+<constraint name="C294" arity="2" scope="V2 V13" reference="neq"/>
+<constraint name="C295" arity="2" scope="V23 V8" reference="neq"/>
+<constraint name="C296" arity="2" scope="V13 V20" reference="neq"/>
+<constraint name="C297" arity="2" scope="V3 V17" reference="neq"/>
+<constraint name="C298" arity="2" scope="V6 V18" reference="neq"/>
+<constraint name="C299" arity="2" scope="V7 V20" reference="neq"/>
+<constraint name="C300" arity="2" scope="V24 V9" reference="neq"/>
+<constraint name="C301" arity="2" scope="V10 V1" reference="neq"/>
+<constraint name="C302" arity="2" scope="V10 V7" reference="neq"/>
+<constraint name="C303" arity="2" scope="V2 V14" reference="neq"/>
+<constraint name="C304" arity="2" scope="V21 V10" reference="neq"/>
+<constraint name="C305" arity="2" scope="V24 V20" reference="neq"/>
+<constraint name="C306" arity="2" scope="V1 V14" reference="neq"/>
+<constraint name="C307" arity="2" scope="V18 V16" reference="neq"/>
+<constraint name="C308" arity="2" scope="V5 V16" reference="neq"/>
+<constraint name="C309" arity="2" scope="V12 V16" reference="neq"/>
+<constraint name="C310" arity="2" scope="V21 V9" reference="neq"/>
+<constraint name="C311" arity="2" scope="V21 V1" reference="neq"/>
+<constraint name="C312" arity="2" scope="V6 V17" reference="neq"/>
+<constraint name="C313" arity="2" scope="V23 V3" reference="neq"/>
+<constraint name="C314" arity="2" scope="V8 V1" reference="hor_match"/>
+<constraint name="C315" arity="2" scope="V3 V6" reference="neq"/>
+<constraint name="C316" arity="2" scope="V16 V19" reference="vert_match"/>
+<constraint name="C317" arity="2" scope="V8 V7" reference="neq"/>
+<constraint name="C318" arity="2" scope="V21 V6" reference="neq"/>
+<constraint name="C319" arity="2" scope="V9 V14" reference="neq"/>
+<constraint name="C320" arity="2" scope="V15 V2" reference="vert_match"/>
+<constraint name="C321" arity="2" scope="V11 V15" reference="neq"/>
+<constraint name="C322" arity="2" scope="V3 V18" reference="neq"/>
+<constraint name="C323" arity="2" scope="V11 V2" reference="neq"/>
+<constraint name="C324" arity="2" scope="V19 V22" reference="neq"/>
+<constraint name="C325" arity="2" scope="V15 V13" reference="neq"/>
+<constraint name="C326" arity="2" scope="V7 V2" reference="neq"/>
+<constraint name="C327" arity="2" scope="V23 V6" reference="neq"/>
+<constraint name="C328" arity="2" scope="V5 V23" reference="vert_match"/>
+<constraint name="C329" arity="2" scope="V9 V4" reference="vert_match"/>
+<constraint name="C330" arity="2" scope="V13 V20" reference="hor_match"/>
+<constraint name="C331" arity="2" scope="V8 V15" reference="neq"/>
+<constraint name="C332" arity="2" scope="V22 V20" reference="neq"/>
+<constraint name="C333" arity="2" scope="V0 V17" reference="vert_match"/>
+<constraint name="C334" arity="2" scope="V5 V13" reference="neq"/>
+<constraint name="C335" arity="2" scope="V8 V16" reference="neq"/>
+<constraint name="C336" arity="2" scope="V19 V22" reference="vert_match"/>
+<constraint name="C337" arity="2" scope="V23 V9" reference="neq"/>
+<constraint name="C338" arity="2" scope="V23 V3" reference="hor_match"/>
+<constraint name="C339" arity="2" scope="V8 V14" reference="neq"/>
+</constraints>
+</instance>
