@@ -1,0 +1,6 @@
+*.lo
+*.o
+*.a
+bin/*
+libs/*
+log/*
