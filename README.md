@@ -43,10 +43,6 @@ The MIT License
   All test parameters can be changed on invocation like this:
   `$ make perftest ARGS="-consistency=ac2001 -verbose"`
 
-# Building gtest
-  Before building the tests, you need to build gtest locally once:
-  `$ make gtest`
-
 # Testing Ace (depends on gtest)
   To build and run the unit tests use:
   `$ make test`

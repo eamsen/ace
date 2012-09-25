@@ -3,8 +3,6 @@ SRCDIR:=src
 TSTDIR:=src/test
 BINDIR:=bin
 OBJDIR:=bin/obj
-# GTESTDIR:=libs/gtest-1.6.0/lib/.libs
-# GTESTLIBS:=$(GTESTDIR)/libgtest.a $(GTESTDIR)/libgtest_main.a
 GTESTLIBS:=-lgtest -lgtest_main
 GFLAGSDIR:=libs/gflags-2.0/.libs
 CXX:=g++ -std=c++0x -Ilibs/gflags-2.0/src
@@ -48,14 +46,10 @@ perftest: opt
 	done
 	@echo "tested all (results in log/$(LOG))";
 
-depend: gflags # gtest 
+depend: gflags 
 
 makedirs:
 	@mkdir -p bin/obj
-
-gtest:
-	@cd libs/gtest-1.6.0/; ./configure; make;
-	@echo compiled gtest
 
 gflags:
 	@cd libs/gflags-2.0/; ./configure; make;
@@ -77,7 +71,7 @@ clean:
 	@echo cleaned
 
 .PRECIOUS: $(OBJS) $(TSTOBJS)
-.PHONY: compile profile opt perftest depend makedirs gtest gflags test\
+.PHONY: compile profile opt perftest depend makedirs gflags test\
 	checkstyle clean
 
 $(BINDIR)/%: $(OBJS) $(SRCDIR)/%.cc
