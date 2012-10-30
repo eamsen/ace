@@ -11,10 +11,10 @@ The MIT License
   * Python 2.7 or newer (only for style checking)
 
 # Dependencies
-  * gflags (http://code.google.com/p/gflags)
-  * gtest (not included, only required for testing)
-  * gperftools (not included, only required for profiling)
-  * cpplint (included, only required for style checking)
+  * gflags (http://code.google.com/p/gflags, also included)
+  * gtest (http://code.google.com/p/googletest, only for testing)
+  * gperftools (http://code.google.com/p/gperftools, only for profiling)
+  * cpplint (included, only for style checking)
 
 # Building gflags
   The repository contains a slightly modified gflags version with less verbose
