@@ -11,14 +11,18 @@ The MIT License
   * Python 2.7 or newer (only for style checking)
 
 # Dependencies
+  * gflags (http://code.google.com/p/gflags)
   * gtest (not included, only required for testing)
   * gperftools (not included, only required for profiling)
-  * gflags (included)
   * cpplint (included, only required for style checking)
 
 # Building gflags
-  Before building ace, you need to build gflags locally once:
+  The repository contains a slightly modified gflags version with less verbose
+  help output.
+  If you want to use the provided version instead, you need to build gflags
+  locally:
   `$ make gflags`
+  and then activate the two lines in the makefile, which are commented out.
 
   Alternatively you can build all dependencies at once:
   `$ make depend`

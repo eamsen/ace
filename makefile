@@ -5,9 +5,11 @@ BINDIR:=bin
 OBJDIR:=bin/obj
 GTESTLIBS:=-lgtest -lgtest_main
 GFLAGSDIR:=libs/gflags-2.0/.libs
-CXX:=g++ -std=c++0x -Ilibs/gflags-2.0/src
+CXX:=g++ -std=c++0x
+# CXX:=g++ -std=c++0x -Ilibs/gflags-2.0/src
 CFLAGS:=-Wall -O3
-LIBS:=$(GFLAGSDIR)/libgflags.a -lpthread -lrt
+LIBS:=-lgflags -lpthread -lrt #$(GFLAGSDIR)/libgflags.a
+# LIBS:=$(GFLAGSDIR)/libgflags.a -lpthread -lrt
 TSTFLAGS:=
 TSTLIBS:=$(GTESTLIBS) -lpthread -lrt
 BINS:=ace
@@ -52,6 +54,7 @@ makedirs:
 	@mkdir -p bin/obj
 
 gflags:
+	@tar xf libs/gflags-2.0.tar.gz -C libs/;
 	@cd libs/gflags-2.0/; ./configure; make;
 	@echo compiled gflags
 
