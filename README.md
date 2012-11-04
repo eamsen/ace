@@ -1,6 +1,15 @@
 # Ace CSP Solver
 by Eugen Sawin <esawin@me73.com>
 
+# Current version
+This is the version used to win competition at the CSPs course at the University
+of Freiburg. 
+It is a stripped version of the original solver missing a lot of
+(suboptimal/not optimized) techniques and supporting only binary constraints. 
+At some point, I will merge the original features back into this repository, as
+long as they provide good results and don't break the efficiency of the general
+approach.
+
 # License
 The MIT License
 
