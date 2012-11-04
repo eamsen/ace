@@ -4,7 +4,7 @@ TSTDIR:=src/test
 BINDIR:=bin
 OBJDIR:=bin/obj
 GTESTLIBS:=-lgtest -lgtest_main
-GFLAGSDIR:=libs/gflags-2.0/.libs
+GFLAGSDIR:=deps/gflags-2.0/.libs
 CXX:=g++ -std=c++0x
 # CXX:=g++ -std=c++0x -Ilibs/gflags-2.0/src
 CFLAGS:=-Wall -O3
@@ -54,8 +54,8 @@ makedirs:
 	@mkdir -p bin/obj
 
 gflags:
-	@tar xf libs/gflags-2.0.tar.gz -C libs/;
-	@cd libs/gflags-2.0/; ./configure; make;
+	@tar xf deps/gflags-2.0.tar.gz -C deps/;
+	@cd deps/gflags-2.0/; ./configure; make;
 	@echo compiled gflags
 
 test: makedirs $(TSTBINS)
@@ -63,7 +63,7 @@ test: makedirs $(TSTBINS)
 	@echo completed tests
 
 checkstyle:
-	@python libs/cpplint/cpplint.py \
+	@python tools/cpplint/cpplint.py \
 		--filter=-readability/streams,-readability/multiline_string\
 		$(SRCDIR)/*.h $(SRCDIR)/*.cc
 
