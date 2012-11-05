@@ -21,6 +21,7 @@ The MIT License
 
 ## Dependencies
   * gflags (http://code.google.com/p/gflags or `$ make gflags`)
+### Optional
   * gtest (http://code.google.com/p/googletest, only for testing)
   * gperftools (http://code.google.com/p/gperftools, only for profiling)
   * cpplint (`$ make cpplint`, only for style checking)
