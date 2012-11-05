@@ -23,7 +23,7 @@ The MIT License
   * gflags (http://code.google.com/p/gflags, also included)
   * gtest (http://code.google.com/p/googletest, only for testing)
   * gperftools (http://code.google.com/p/gperftools, only for profiling)
-  * cpplint (included, only for style checking)
+  * cpplint (only for style checking)
 
 ## Building gflags
   The repository contains a slightly modified gflags version with less verbose
@@ -58,12 +58,16 @@ The MIT License
 
 ## Testing Ace (depends on gtest)
   To build and run the unit tests use:
-  `$ make test`
+  `$ make check`
 
 ## Profiling Ace (depends on gperftools)
   To build Ace with profiling turned on use:
   `$ make profile`
 
-## Checking style
+## Getting cpplint
+  Code style checking depends on a modified version of Google's cpplint.  
+  Get it via `$ make cpplint`.
+
+## Checking style (depends on cpplint)
   To test code style conformance with the [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml) use:
   `$ make checkstyle`

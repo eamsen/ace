@@ -23,7 +23,7 @@ BINS:=$(addprefix $(BINDIR)/, $(BINS))
 TSTBINS:=$(addprefix $(BINDIR)/, $(TSTBINS))
 
 compile: makedirs $(BINS)
-	@echo compiled all
+	@echo "compiled all"
 
 profile: CFLAGS=-Wall -O3 -DPROFILE
 profile: LIBS+=-lprofiler
@@ -48,7 +48,7 @@ perftest: opt
 	done
 	@echo "tested all (results in log/$(LOG))";
 
-depend: gflags 
+depend: gflags cpplint
 
 makedirs:
 	@mkdir -p bin/obj
@@ -56,11 +56,22 @@ makedirs:
 gflags:
 	@tar xf deps/gflags-2.0.tar.gz -C deps/;
 	@cd deps/gflags-2.0/; ./configure; make;
-	@echo compiled gflags
+	@echo "compiled gflags"
 
-test: makedirs $(TSTBINS)
+cpplint: 
+	@if [ -f tools/cpplint/cpplint.py ];\
+	then\
+		echo "updating cpplint";\
+		cd tools/cpplint; git pull; cd ../..;\
+	else\
+		echo "cloning cpplint";\
+		mkdir tools && cd tools;\
+		git clone git@github.com:eamsen/cpplint.git; cd ..;\
+	fi
+
+check: makedirs $(TSTBINS)
 	@for t in $(TSTBINS); do ./$$t; done
-	@echo completed tests
+	@echo "completed tests"
 
 checkstyle:
 	@python tools/cpplint/cpplint.py \
@@ -71,20 +82,20 @@ clean:
 	@rm -f $(OBJDIR)/*.o
 	@rm -f $(BINS)
 	@rm -f $(TSTBINS)
-	@echo cleaned
+	@echo "cleaned"
 
 .PRECIOUS: $(OBJS) $(TSTOBJS)
-.PHONY: compile profile opt perftest depend makedirs gflags test\
+.PHONY: compile profile opt perftest depend makedirs gflags check cpplint\
 	checkstyle clean
 
 $(BINDIR)/%: $(OBJS) $(SRCDIR)/%.cc
 	@$(CXX) $(CFLAGS) -o $(OBJDIR)/$(@F).o -c $(SRCDIR)/$(@F).cc
 	@$(CXX) $(CFLAGS) -o $(BINDIR)/$(@F) $(OBJDIR)/$(@F).o $(OBJS) $(LIBS)
-	@echo compiled $(BINDIR)/$(@F)
+	@echo "compiled $(BINDIR)/$(@F)"
 
 $(BINDIR)/%-test: $(OBJDIR)/%-test.o $(OBJS)
 	@$(CXX) $(TSTFLAGS) -o $(BINDIR)/$(@F) $(OBJS) $< $(TSTLIBS)
-	@echo compiled $(BINDIR)/$(@F)
+	@echo "compiled $(BINDIR)/$(@F)"
 
 $(OBJDIR)/%-test.o: $(TSTDIR)/%-test.cc
 	@$(CXX) $(TSTFLAGS) -o $(OBJDIR)/$(@F) -c $<
