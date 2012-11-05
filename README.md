@@ -23,7 +23,7 @@ The MIT License
   * gflags (http://code.google.com/p/gflags or `$ make gflags`)
   * gtest (http://code.google.com/p/googletest, only for testing)
   * gperftools (http://code.google.com/p/gperftools, only for profiling)
-  * cpplint (`$ make cppling`, only for style checking)
+  * cpplint (`$ make cpplint`, only for style checking)
 
 ## Building gflags
   The repository contains a slightly modified gflags version with less verbose
