@@ -4,12 +4,12 @@ TSTDIR:=src/test
 BINDIR:=bin
 OBJDIR:=bin/obj
 GTESTLIBS:=-lgtest -lgtest_main
-GFLAGSDIR:=deps/gflags-2.0/.libs
+GFLAGSDIR:=deps/gflags-2.0
 CXX:=g++ -std=c++0x
-# CXX:=g++ -std=c++0x -Ilibs/gflags-2.0/src
+# CXX:=g++ -std=c++0x -I$(GFLAGSDIR)/src
 CFLAGS:=-Wall -O3
-LIBS:=-lgflags -lpthread -lrt #$(GFLAGSDIR)/libgflags.a
-# LIBS:=$(GFLAGSDIR)/libgflags.a -lpthread -lrt
+LIBS:=-lgflags -lpthread -lrt
+# LIBS:=$(GFLAGSDIR)/.libs/libgflags.a -lpthread -lrt
 TSTFLAGS:=
 TSTLIBS:=$(GTESTLIBS) -lpthread -lrt
 BINS:=ace

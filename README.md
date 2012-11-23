@@ -20,6 +20,7 @@ The MIT License
 * Python 2.7 or newer (only for style checking)
 
 ## Dependencies
+### Required
 * gflags (http://code.google.com/p/gflags or `$ make gflags`)
 
 ### Optional
@@ -36,7 +37,6 @@ locally:
     $ make gflags
 
 and then activate the two lines in the makefile, which are commented out.
-
 Alternatively you can build all dependencies at once:
 
     $ make depend
@@ -79,8 +79,7 @@ To build Ace with profiling turned on use:
     $ make profile
 
 ## Getting cpplint
-Code style checking depends on a modified version of Google's cpplint.  
-Get it via
+Code style checking depends on a modified version of Google's cpplint. Get it via
   
     $ make cpplint
 
