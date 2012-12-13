@@ -66,7 +66,7 @@ cpplint:
 	else\
 		echo "cloning cpplint";\
 		mkdir tools && cd tools;\
-		git clone git@github.com:eamsen/cpplint.git; cd ..;\
+		git clone git://github.com/eamsen/cpplint.git; cd ..;\
 	fi
 
 check: makedirs $(TSTBINS)
