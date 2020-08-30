@@ -73,6 +73,10 @@ void Main(const string& input_path);
 // Returns whether the network was found to be consistent.
 bool Preprocess(Preprocessor* pre, Clock::Diff* duration);
 
+// Selects a solver based on provided flags.
+// Returns the solver when successful, nullptr otherwise.
+Solver* SelectSolver(Network* network);
+
 }  // namespace ace
 
 int main(int argc, char* argv[]) {
@@ -131,53 +135,25 @@ void Main(const string& input_path) {
     preprocess_time += duration;
   }
   Clock::Diff solver_time = 0;
-  Solver* solver = NULL;
-  // Choose solving algorithm.
+  Solver* const solver = SelectSolver(&network);
+  bool sat = false;
+  if (solver) {
+    // Solve.
+    solver->time_limit(FLAGS_timelimit * Clock::kMicroInSec - (Clock() - beg));
+    solver->max_num_solutions(FLAGS_maxnumsolutions);
+    Profiler::Start("log/solve.prof");
+    sat = solver->Solve();
+    Profiler::Stop();
+    solver_time = solver->duration();
+  }
+
+  // Output results.
   if (!consistent) {
     // Inconsistent problems are unsatisfiable.
     cout << "UNSAT\n";
-  } else if (FLAGS_backjumping) {
-    // Prepare solver for the basic version of Gaschnig's backjumping.
-    BackjumpSolver* backjump_solver = new BackjumpSolver(&network);
-    solver = backjump_solver;
-  } else if (FLAGS_randomwalk.size()) {
-    // Prepare solver for random-walk.
-    const vector<int> parameters = Parser::CollectInts(FLAGS_randomwalk, ",");
-    if (parameters.size() != 3) {
-      cout << "Wrong parameter size for randomwalk flag.\n";
-      return;
-    }
-    RandomWalkSolver* random_walk_solver = new RandomWalkSolver(&network);
-    solver = random_walk_solver;
-    random_walk_solver->max_num_tries(parameters[0]);
-    random_walk_solver->max_num_flips(parameters[1]);
-    random_walk_solver->random_probability(parameters[2]);
-    cout << "Random walk max tries: " << random_walk_solver->max_num_tries()
-         << "\nRandom walk max flips: " << random_walk_solver->max_num_flips()
-         << "\nRandom step probability: "
-         << random_walk_solver->random_probability() << "%\n";
-  } else {
-    // Prepare solver for backtracking with arc-consistency look-ahead.
-    BacktrackSolver* backtrack_solver = new BacktrackSolver(&network);
-    solver = backtrack_solver;
-    // Choose variable ordering.
-    if (FLAGS_heuristic == "maxcardinality") {
-      MaxCardinalityOrdering var_ordering(network);
-      backtrack_solver->variable_ordering(var_ordering);
-    } else if (FLAGS_heuristic == "minwidth") {
-      MinWidthOrdering var_ordering(network);
-      backtrack_solver->variable_ordering(var_ordering);
-    }
-  }
-  // Solve.
-  solver->time_limit(FLAGS_timelimit * Clock::kMicroInSec - (Clock() - beg));
-  solver->max_num_solutions(FLAGS_maxnumsolutions);
-  Profiler::Start("log/solve.prof");
-  const bool sat = solver->Solve();
-  Profiler::Stop();
-  solver_time = solver->duration();
-  // Output results.
-  if (sat) {
+  } else if (!solver) {
+    cout << "INVALID FLAGS\n";
+  } else if (sat) {
     cout << "SAT\n"
          << solver->solutions().back().Str() << "\n";
   } else if (solver_time >= solver->time_limit()) {
@@ -196,13 +172,13 @@ void Main(const string& input_path) {
     cout << (solver_time > solver->time_limit() ? "INDETERMINATE\n" :
                                                   "UNSAT\n");
   }
-  if (FLAGS_randomwalk.size()) {
+  if (consistent && FLAGS_randomwalk.size()) {
     // Exploration stats of the random walk.
     RandomWalkSolver* random_walk_solver =
       static_cast<RandomWalkSolver*>(solver);
     cout << "\nRandom steps: " << random_walk_solver->num_random_steps()
          << "\nGreedy steps: " << random_walk_solver->num_greedy_steps();
-  } else if (FLAGS_verbose) {
+  } else if (consistent && FLAGS_verbose) {
     // Exploration stats of backtrack-based algorithms.
     double explored = solver->num_explored_states();
     cout << "\nExplored: " << explored << " of "
@@ -221,6 +197,7 @@ void Main(const string& input_path) {
                                                preprocess_time + solver_time)
          << endl;
   }
+
   delete solver;
 }
 
@@ -236,6 +213,44 @@ bool Preprocess(Preprocessor* pre, Clock::Diff* duration) {
          << pre->type() << " time: " << Clock::DiffStr(*duration) << "\n";
   }
   return consistent;
+}
+
+Solver* SelectSolver(Network* network) {
+  // Choose solving algorithm.
+  if (FLAGS_backjumping) {
+    // Prepare solver for the basic version of Gaschnig's backjumping.
+    BackjumpSolver* backjump_solver = new BackjumpSolver(network);
+    return backjump_solver;
+  }
+  if (FLAGS_randomwalk.size()) {
+    // Prepare solver for random-walk.
+    const vector<int> parameters = Parser::CollectInts(FLAGS_randomwalk, ",");
+    if (parameters.size() != 3) {
+      cout << "Wrong parameter size for randomwalk flag.\n";
+      return nullptr;
+    }
+    RandomWalkSolver* random_walk_solver = new RandomWalkSolver(network);
+    random_walk_solver->max_num_tries(parameters[0]);
+    random_walk_solver->max_num_flips(parameters[1]);
+    random_walk_solver->random_probability(parameters[2]);
+    cout << "Random walk max tries: " << random_walk_solver->max_num_tries()
+         << "\nRandom walk max flips: " << random_walk_solver->max_num_flips()
+         << "\nRandom step probability: "
+         << random_walk_solver->random_probability() << "%\n";
+    return random_walk_solver;
+  }
+
+  // Prepare solver for backtracking with arc-consistency look-ahead.
+  BacktrackSolver* backtrack_solver = new BacktrackSolver(network);
+  // Choose variable ordering.
+  if (FLAGS_heuristic == "maxcardinality") {
+    MaxCardinalityOrdering var_ordering(*network);
+    backtrack_solver->variable_ordering(var_ordering);
+  } else if (FLAGS_heuristic == "minwidth") {
+    MinWidthOrdering var_ordering(*network);
+    backtrack_solver->variable_ordering(var_ordering);
+  }
+  return backtrack_solver;
 }
 
 }  // namespace ace

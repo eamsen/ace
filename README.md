@@ -2,11 +2,11 @@
 by Eugen Sawin <esawin@me73.com>
 
 ## Version
-This is the version that was used to win the competition at the CSPs course at
-the University of Freiburg.   
-It is a stripped version of the original solver missing a lot of
-(suboptimal/not optimized) techniques and supporting only binary constraints.  
-At some point, I will merge the original features back into this repository, as
+This is the version that has won the competition in the CSP course at
+the University of Freiburg.
+It is a stripped version of the original solver missing many
+(suboptimal/not optimized) techniques and supporting only binary constraints.
+At some point (in some far far future), I might merge the original features back into this repository, as
 long as they provide good results and don't break the efficiency of the general
 approach.
 
@@ -30,7 +30,7 @@ The MIT License
 
 ## Building gflags
 The repository contains a slightly modified gflags version with less verbose
-help output.  
+help output.
 If you want to use the provided version instead, you need to build gflags
 locally:
 
@@ -80,7 +80,7 @@ To build Ace with profiling turned on use:
 
 ## Getting cpplint
 Code style checking depends on a modified version of Google's cpplint. Get it via
-  
+
     $ make cpplint
 
 ## Checking style (depends on cpplint)
